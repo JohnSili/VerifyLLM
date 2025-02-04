@@ -1,0 +1,14 @@
+anthropic
+requests
+rich
+typing-extensions
+python-dotenv
+dataclasses-json
+pandas
+numpy
+torch
+pytest
+black
+flake8
+mypy
+isort

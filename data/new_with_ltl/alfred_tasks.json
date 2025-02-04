@@ -1,0 +1,2486 @@
+{
+  "total_tasks": 200,
+  "tasks": [
+    {
+      "split": "train",
+      "goal": "Putting a bowl with a sliced tomato on the white table",
+      "high_level_steps": [
+        "Turn to the right and stop at the counter on the left of the oven",
+        "Grab the small knife off of the counter",
+        "Turn around and head to the sink",
+        "Cut the tomato into slices",
+        "Turn around and head to the oven",
+        "Put the knife into the pan on the bottom right stove",
+        "Turn around and head to the sink",
+        "Grab one of the tomato slices",
+        "Turn around and head to the oven",
+        "Put the tomato in the bowl in the top left stove",
+        "Grab the bowl off of the stove",
+        "Turn left and head to the white table",
+        "Place the bowl on the table"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Place the empty toilet paper tube on the toilet paper holder.",
+      "high_level_steps": [
+        "Turn left and walk to the left edge of the black table.",
+        "Pick up the orange tube on the table.",
+        "Turn around and walk to the toilet and go to the toilet paper holder.",
+        "Put the orange tube on the black bar in the toilet paper holder."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put a cold potato in the trash bin.",
+      "high_level_steps": [
+        "Forward toward the shelves, then turn right and move forward, then turn right to face the kitchen island.",
+        "Pick up the potato on the kitchen island.",
+        "Turn left and go toward the sink, then turn right and go forward, then turn left to face the fridge.",
+        "Open the fridge, put the potato inside and chill it, then take the potato out.",
+        "Go to the trash bin, to the right of the fridge.",
+        "Put the potato in the trash bin."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Place the over cooked potato slice into the sink. ",
+      "high_level_steps": [
+        "Turn left walk towards the refrigerator then turn right and walk towards the stove, then left and walk towards the toaster.",
+        "Pick up the knife in front of the toaster.",
+        "Take the knife, turn left, then walk towards the sink.",
+        "Slice the potato inside the sink.",
+        "Take the knife, turn all the way around facing towards the toaster.",
+        "Place the knife back in front of the toaster.",
+        "Turn back towards the sink .",
+        "Pick up a potato slice inside the sink.",
+        "Turn around facing the white table then turn right and walk towards the stove.",
+        "Place the potato slice into the microwave above the stove and cook it.",
+        "Take the potato slice out of the microwave, turn all the way around, then walk towards the sink then turn right.",
+        "Place the potato slice into the sink."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put two bars of soap in a sink.",
+      "high_level_steps": [
+        "Walk forward to the wall, then turn left and walk to the sinks.",
+        "Pick up the bar of soap closest to the sink on the right.",
+        "Walk slightly to the left and turn right towards the sink on the left.",
+        "Put the bar of soap in the sink on the left.",
+        "Pick up the other bar of soap from the counter.",
+        "Put that bar of soap into the sink on the left, to the left of the first bar."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "place two CD's in the dresser pullout drawer",
+      "high_level_steps": [
+        "turn right and look down a bit at the dresser",
+        "pick the CD up off of the dresser there",
+        "turn around and back up a bit, then face the dresser again",
+        "place the CD in the pullout drawer of the dresser on the left",
+        "walk forwards to the dresser ahead",
+        "grab another CD off of the dresser",
+        "turn around and back up a bit, then face the dresser again",
+        "place the CD in the pullout drawer of the dresser on the left"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Rinse a bowl to put on the shelf.",
+      "high_level_steps": [
+        "Turn around to face the sink.",
+        "Pull a bowl out from underneath the sink.",
+        "Turn to face the sink.",
+        "Rinse the bowl in the sink, removing it afterwards.",
+        "Turn left, hanging another left around the kitchen island to reach the shelf in the corner of the room.",
+        "Set the bowl down on the shelf."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put two books in the bottom drawer of the large desk.",
+      "high_level_steps": [
+        "Turn around and go to the side of the bed.",
+        "Pick up the book on the edge of the bed.",
+        "Turn around and go to the large desk.",
+        "Put the book in the bottom drawer of the desk.",
+        "Turn left and go to the small desk.",
+        "Pick up the book on the desk.",
+        "Turn right and go to the large desk.",
+        "Put the book in the bottom drawer of the desk beside the other book."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Wash the knife to place it in the drawer.",
+      "high_level_steps": [
+        "Turn right and head towards the counter space in between the sink and stove.",
+        "Pick up the yellow knife on the counter.",
+        "Take a step to the left to face the sink.",
+        "Place the knife in the sink, wash it, and pick it back up.",
+        "Turn left and pull out the drawer at the top right corner from you.",
+        "Place the knife next to the spoon in the drawer."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put a glass bowl with a golden spoon into the kitchen sink.",
+      "high_level_steps": [
+        "Walk through the kitchen over to the kitchen sink.",
+        "Pick up the golden metal spoon with a blue handle up off of the counter in front of the sink.",
+        "Turn left, walk towards the kitchen counter, then hang a left and begin walking across the room, stop when at the glass bowl on the kitchen island and turn left to face the island.",
+        "Place the golden spoon handle up in the glass bowl that is on the kitchen island",
+        "Pick up the glass bowl with the golden spoon in it.",
+        "Turn left and walk over to the kitchen sink.",
+        "Place the glass bowl with the golden spoon in it into the right side of the kitchen sink."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put a mug with a pen in it on a night stand.",
+      "high_level_steps": [
+        "Walk to the right side of the desk in front of you.",
+        "Pick up the pen closest to the front of the laptop on the desk.",
+        "Walk to the left side of the same desk.",
+        "Put the pen in the mug that is on the desk.",
+        "Pick up the mug from the desk.",
+        "Turn right and walk to the night stand that is to the left of the bed.",
+        "Put the mug on the night stand, to the left of the keys."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "place a cooled off apple inside of the kitchen microwave",
+      "high_level_steps": [
+        "turn left and walk to the end of the kitchen island on the left, then turn left and walk over to the middle of the kitchen counter on the right",
+        "grab the back side apple off of the kitchen counter there",
+        "turn left and walk over to the fridge on the right side of the room",
+        "place the apple inside of the fridge, cool it off in there for a bit, then take it back out",
+        "turn right and walk over to the microwave at the end of the room on the left side on top of the kitchen counter",
+        "place the apple inside of the microwave"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "cool a pot to put it in a cabinet",
+      "high_level_steps": [
+        "walk to the stove",
+        "grab the pot off of the bottom right burner",
+        "take the pot over to the fridge",
+        "put the pot in the fridge to cool and then take it back out",
+        "take the pot over to the left side kitchen cabinets",
+        "put the pot inside the cabinet below"
+      ]
+    },
+    {
+      "split": "valid_seen",
+      "goal": "put clean spoon on the table",
+      "high_level_steps": [
+        "turn around, walk forward, turn left to face table",
+        "pick up the spoon that is on the table",
+        "turn right, walk to the sink",
+        "put the spoon in the sink, turn on the water, take spoon out",
+        "turn around, walk forward, turn right, walk to table",
+        "put the spoon on the table"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Move a towel from a towel holder to a garbage bin",
+      "high_level_steps": [
+        "Go forward to the towel bar, then turn right then left to go around the shower, then turn right and head to the garbage bin under the round towel holder",
+        "Take the towel from the round towel holder",
+        "Back up a few steps then turn around, then go right and then right again and face the toilet",
+        "Put the towel in the garbage bin to the right of the toilet"
+      ]
+    },
+    {
+      "split": "valid_seen",
+      "goal": "Place a towel inside a sink",
+      "high_level_steps": [
+        "Take a step forward then turn to your left to the towel holder that is in between the two counters",
+        "Pick up the towel that is hanging on the towel holder",
+        "Turn to the right to face the sink",
+        "Place the towel inside the sink"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Move a candle from the bathroom counter to the back of the toilet. ",
+      "high_level_steps": [
+        "Move to your right a bit until you are standing in front of the bathroom counter.",
+        "Pick up the candle that is on the counter.",
+        "Do a complete turn around until you are facing the bathroom sink and toilet once again.",
+        "Place the candle on the back of the toilet."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "put soap in drawer",
+      "high_level_steps": [
+        "walk to face toilet",
+        "pick up soap bar from toilet tank",
+        "turn left to face sink drawers",
+        "put soap in drawer"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Place a square pan with a spatula inside on the table with bread on it.",
+      "high_level_steps": [
+        "Turn around and walk towards the garbage can.",
+        "Take the spatula off the table near the garbage can.",
+        "Turn around and walk to the oven",
+        "Place the spatula in the square pan on the stove",
+        "Pick up the square pan on the stove",
+        "Turn around and walk towards the table with bread on it.",
+        "Place the square pan on the table"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put a heated apple on the table, left of the sponge. ",
+      "high_level_steps": [
+        "Turn around, move to face the apple on the green table.",
+        "Pick up the apple on the table.",
+        "Bring the apple left, to the microwave over the stove.",
+        "Heat the apple in the microwave.",
+        "Bring the heated apple back to the green table behind you on the right.",
+        "Put the apple on the table, left of the sponge."
+      ]
+    },
+    {
+      "split": "valid_seen",
+      "goal": "Place a vase on a coffee table",
+      "high_level_steps": [
+        "Turn right and cross the room, turn right  and walk to the tc stand on your left, turn to face the tv stand",
+        "Pick up the blue vase that is sitting on the tv stand",
+        "Turn around to face the black coffee table in",
+        "Place the vase on the coffee table to the left of the computer"
+      ]
+    },
+    {
+      "split": "valid_unseen",
+      "goal": "Place a microwaved apple in the fridge.",
+      "high_level_steps": [
+        "Walk towards the fridge, then turn right and walk to the window, then turn left to the grey counter.",
+        "Pick up the rightmost green apple on the counter.",
+        "Turn left and walk forward, then turn right toward the stove and open the microwave door above the stove.",
+        "Place the apple inside the microwave to the left of the mug, close the microwave door, and start the microwave, wait, then open the microwave door and take the apple out.",
+        "Turn left to face the sink, then turn right towards the wall and walk forward, then turn right towards the fridge.",
+        "Open the fridge door, place the apple inside in front of the lettuce, and close the door."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "To move two credit cards to the table. ",
+      "high_level_steps": [
+        "Turn right and walk to the table to the right of the green chair on the left.",
+        "Pick up the credit card closest to the lamp on the table.",
+        "Turn left and walk to the table on the right.",
+        "Place the credit card on the table in front of the alarm clock.",
+        "Turn, walk to the other side of the room, turn right to face a green chair with a white pillow on it.",
+        "Pick up the credit card to the left of the white pillow.",
+        "Turn left and walk back to the table with the first credit card on it.",
+        "Place the credit card on the table to the right of the first credit card."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Move a plate with a spatula to the table.",
+      "high_level_steps": [
+        "Turn and go to the counter by the sink.",
+        "Pick up a spatula on the counter.",
+        "Put the spatula on a plate on the counter.",
+        "Pick up the plate on the counter.",
+        "Turn and go to the table.",
+        "Put the plate on the table."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put box on table and put remote in box",
+      "high_level_steps": [
+        "Turn right, walk to table, turn right, walk to window",
+        "Pick up box off of ground",
+        "Turn around, then turn left, walk to chair, turn right, walk to table, turn right",
+        "Put box on top of table",
+        "Turn right, walk to chair, turn left, walk forward to wall",
+        "Turn left, pick up remote off of table",
+        "Turn left, walk to chair, turn right, walk to table",
+        "Put remote in box on table, close box"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put two grey spray bottles in the second from the right cabinet under the sink.",
+      "high_level_steps": [
+        "Move to the right of the sink to the bin.",
+        "Pick up a grey spray bottle from the bin.",
+        "Move to the middle of the counter to the left of you.",
+        "Open the second from the right cabinet door and place the bottle inside and close the door.",
+        "Move to the middle of the counter in between the two sinks.",
+        "Pick up the grey spray bottle from the counter.",
+        "Move to the middle of the counter to the left of you.",
+        "Open the second from the right cabinet door and place the bottle inside and close the door."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Bring a washed mug to the coffee maker.",
+      "high_level_steps": [
+        "Turn right and walk to the fridge.",
+        "Open the fridge and take the mug out of the fridge.",
+        "Turn left and walk to the sink.",
+        "Put the mug in the sink, turn the water on and fill the sink.",
+        "Take the mug out of the sink, go right to the coffee maker.",
+        "Set the mug on the coffee maker."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put the bowl with cell phone on the desk",
+      "high_level_steps": [
+        "Walk forward then turn left on the desk",
+        "Pick up the cell phone on the right side of the desk",
+        "Turn right then head to side table of the bed",
+        "Put the cell phone in the bowl",
+        "Pick up the bowl with cell phone on the side table",
+        "Turn right then cross the room head to the left side of the desk",
+        "Put the bowl with cell phone on the desk near the monitor"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Microwaving an apple slice",
+      "high_level_steps": [
+        "Turn left and go to the white table across the room.",
+        "Pick up the knife on the table",
+        "Turn right and go to the counter",
+        "Slice the apple on the counter",
+        "Turn left and go to the counter",
+        "Put the knife on the plate on the counter",
+        "Turn right and go to the counter",
+        "Take a piece of apple from the counter",
+        "Turn left and go across the room to the microwave",
+        "Put the apple in the microwave and cook it",
+        "Take the apple out of the microwave and turn right and go across the room to the trash can",
+        "Throw the apple into the trash"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Get the pencil, put the pencil on the tray, take tray to coffee table.",
+      "high_level_steps": [
+        "Turn around, walk towards coffee table, turn left, face coffee table.",
+        "Pick up pencil on the left from coffee table.",
+        "Turn left walk towards wall, turn right walk towards table.",
+        "Place pencil on tray.",
+        "Pick up tray with pencil on it.",
+        "Walk to coffee table.",
+        "Put tray on to coffee table next to book."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put a cold potato in the microwave next to the fridge. ",
+      "high_level_steps": [
+        "Turn around, walk straight and turn to the right to go to the dishwasher.",
+        "Pick up a potato next to the green cup on the table.",
+        "Walk to the right and turn left to face the fridge.",
+        "Open the fridge, put the potato next to the tomato in the fridge, close the fridge, let it cool for a while, pick it up again and close the fridge.",
+        "Go to the microwave on the counter top next to the fridge.",
+        "Put the potato in it and close the microwave."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Pick up a bowl while turning on a lamp",
+      "high_level_steps": [
+        "Move to the brown night stand to the left of the bed",
+        "Pick up the grey bowl to the right of the lamp",
+        "Face the green lamp on top of the night stand",
+        "Turn on the lamp that is sitting on top of the night stand"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Turn on the lamp with the remote control",
+      "high_level_steps": [
+        "Walk across the room to the couch",
+        "Pick up the remote control on the couch",
+        "Walk to the right of the couch in front of the lamp",
+        "Use the remote control to turn on the lamp"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Examine a basketball next to the light of a lamp.",
+      "high_level_steps": [
+        "Turn right to find a basketball beneath the desk.",
+        "Pick up the basketball from the floor.",
+        "Turn left towards the bed, walk to the edge of the bed, and then turn left towards the lamp on your right.",
+        "Turn on the lamp."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Carry a laptop while turning on a lamp",
+      "high_level_steps": [
+        "Move to the right hand side of the bed next to the teddy bear and laptop",
+        "Pick up the laptop on top of the bed",
+        "Carry the laptop over to the night stand to the right facing the lamp on top of the night stand",
+        "Turn on the lamp"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put in the plate with sponge in the cabinet",
+      "high_level_steps": [
+        "Move forward, turn right then head to the counter beside the microwave",
+        "Pick up the sponge beside the microwave",
+        "Turn right then face left to the sink",
+        "Put the sponge on the plate at the sink",
+        "Pick up the plate with sponge",
+        "Turn right walk forward then left face the last cabinet",
+        "Open the last cabinet put in the plate with sponge then close the cabinet"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Place a heated cup in a cabinet.",
+      "high_level_steps": [
+        "Walk straight to the fridge, then turn left and walk to the sink.",
+        "Pick up the clear drinking glass in the sink.",
+        "Turn left and walk to the stove.",
+        "Heat the glass in the microwave above the stove.",
+        "Take a step right.",
+        "Place the glass in the cabinet to the right of the microwave, to the left of the bottle of wine."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "To put an empty roll on the toilet paper holder on the wall.",
+      "high_level_steps": [
+        "Turn left and walk forward and turn right to face the empty roll on the table.",
+        "Pick up the empty roll on the table.",
+        "Turn around and walk forward to face the toilet paper holder on the wall.",
+        "Place the empty roll on the toilet paper holder on the wall."
+      ]
+    },
+    {
+      "split": "valid_seen",
+      "goal": "Pick up a towel and turn a light on.",
+      "high_level_steps": [
+        "Turn to the right and face the blue towel on the floor.",
+        "Pick the blue towel up from the floor.",
+        "Go right and cross the room to stand in front of the table to the right of the bed and night stand that has a lamp on it.",
+        "Turn the lamp on."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "put two kettles into a cabinet",
+      "high_level_steps": [
+        "walk to face the stove top",
+        "pick up the left hand kettle from the stove top",
+        "turn to the left to face the cabinet below the counter with a red apple",
+        "open the cabinet door, put the kettle inside, close the door",
+        "to right to walk to face the stove top",
+        "pick up the kettle from the stove top",
+        "turn to the left to face the cabinet below the counter with a red apple",
+        "open the cabinet door, put the kettle inside behind the other kettle, close the door"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put the purple cloths on the small table",
+      "high_level_steps": [
+        "Turn around and walk up to the bathtub",
+        "Pick up the left most purple cloth from the bathtub",
+        "Turn left and walk up to the small dark table by the door",
+        "Put the purple cloth on the small table",
+        "Turn around and walk back to face the side of the bathtub",
+        "Pick up the purple cloth from the bathtub",
+        "Turn left and walk back to the small dark table",
+        "Put the purple cloth on the table"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Move a cup and pencil to a desk.",
+      "high_level_steps": [
+        "Turn around and face the desk on the right.",
+        "Pick up the pencil from the center of the desk.",
+        "Carry the pencil and turn to the left.",
+        "Place the pencil in the cup on the back of the short table.",
+        "Pick up the cup from the table.",
+        "Carry the cup and turn to the right.",
+        "Place the cup and pencil on the desk, in the center."
+      ]
+    },
+    {
+      "split": "valid_unseen",
+      "goal": "Put chilled lettuce on the counter. ",
+      "high_level_steps": [
+        "Move forward, turn right, go to the fridge, turn right, go to face the lettuce on the counter, past the sink on the right.",
+        "Pick up the lettuce on the counter.",
+        "Turn right, bring the lettuce to the fridge on the right.",
+        "Chill the lettuce in the fridge.",
+        "Take the chilled lettuce to the counter, right of the fridge.",
+        "Put the chilled lettuce on the counter, in front of the bread."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put a heated slice of potato next to the salt shaker on the black table. ",
+      "high_level_steps": [
+        "Turn left and go to the small black table in the right corner.",
+        "Pick up the yellow knife on the table on the left.",
+        "Slice a half of the potato on the table.",
+        "Turn left and go to the right side of the white table.",
+        "Place the yellow knife on the table over the fork.",
+        "Turn right and go back to the black table with the sliced potato.",
+        "Pick up one slice of potato from the table.",
+        "Turn right and go across the kitchen to the white table in the right corner.",
+        "Heat the potato slice in the microwave on the top of the white table and take it out.",
+        "Turn around and go back to the small black table with sliced potato.",
+        "Place the heated potato slice on the table on the right of the salt shaker."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Place a glass with a fork in it on the counter above the dishwasher.",
+      "high_level_steps": [
+        "Turn around and face the central table.",
+        "Pick up the fork on the table.",
+        "Move to the middle of the central table.",
+        "place the fork in a glass on the table.",
+        "Pick up the glass on the table.",
+        "Turn around and walk to the counter over the dishwasher.",
+        "Place the glass on the counter."
+      ]
+    },
+    {
+      "split": "valid_seen",
+      "goal": "Examine the baseball bat under the light of the table lamp",
+      "high_level_steps": [
+        "Turn around and walk up to the corner to the right of the desk",
+        "Pick up the baseball bat from the floor near the desk",
+        "Turn left and approach the table lamp on the left side of the desk",
+        "Turn on the table lamp on the desk"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put a heated mug into a cupboard",
+      "high_level_steps": [
+        "Turn right then turn left and go just past the table then turn left then right and head to the coffee maker on the counter",
+        "Pick up the mug from the coffee maker",
+        "Turn right then turn right again and go past the table then turn right and go the wall, then turn left and go to the microwave",
+        "Heat the mug in the microwave then take the mug out of the microwave",
+        "Turn left and go to the stove then turn right to face the toaster",
+        "Put the mug in the cupboard that is to the upper left of the toaster"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Turning a lamp on",
+      "high_level_steps": [
+        "Turn around and stand in front of the sofa and face the table",
+        "Grab the watch off of the table",
+        "Turn left and then walk right to the lamp",
+        "Turn the lamp light on"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put a pot with a spoon on the table in front of the stove.",
+      "high_level_steps": [
+        "Move to the table to the left of the stove",
+        "Pick up a spoon from the table",
+        "Move to the stove behind you",
+        "Put the spoon in a pot on the stove",
+        "Pick up the pot from the stove",
+        "Move to the table behind you",
+        "Put the pot of the table"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put a vase in a fridge. ",
+      "high_level_steps": [
+        "Move forward a few feet, turn right to face the sink.",
+        "Pick up the vase on the counter behind the sink.",
+        "Bring the vase to the fridge on the left.",
+        "Put the vase in the fridge."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put two cd's on the cabinet",
+      "high_level_steps": [
+        "Turn right then head to your left facing the side drawer on the bed",
+        "Open the second drawer and pick up the cd",
+        "Turn left walk past the end of the bed then turn right facing the cabinet",
+        "Put the cd on top of the cabinet",
+        "Turn right head back to the side drawer",
+        "Open the second drawer and pick up the cd",
+        "Turn left and head back to the cabinet",
+        "Put the cd on the right side of the cabinet beside the cell phone"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put a towel on the counter.",
+      "high_level_steps": [
+        "Turn left and take a step to your left.",
+        "Pick up the towel that's hanging on the ring that's on the wall to the left of the mirror.",
+        "Turn right and walk to the shower then turn left.",
+        "Put the towel to the left of the right sink."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put the CDs in the dark side table drawer",
+      "high_level_steps": [
+        "Turn right and walk forward then turn right and approach the brown arm chair",
+        "Pick up the CD from the arm chair",
+        "Turn right and walk a few feet over to the dark side table by the bed",
+        "Open the table drawer and put the CD in it",
+        "Turn around and walk over to the right side of the wooden table",
+        "Pick up the CD from the table",
+        "Turn around and walk back to the dark side table",
+        "Open the table drawer and put the CD inside next to the other CD"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "put heated mug into a cabinet",
+      "high_level_steps": [
+        "walk to face right side of kitchen table",
+        "pick up white mug from table",
+        "turn to face microwave",
+        "heat mug in microwave, remove mug from microwave",
+        "gaze upward to cabinet above microwave",
+        "put mug in cabinet"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Examine the credit card under light of the floor lamp",
+      "high_level_steps": [
+        "Walk forward to the side table with the plant on it",
+        "Pick up the red credit card from the table",
+        "Turn left and walk over to the floor lamp near the recycling bin",
+        "Turn on the floor lamp"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Move a pepper grinder to the counter top",
+      "high_level_steps": [
+        "Move left then head back to the cupboard on the far left side above the stove top",
+        "Open the far left cupboard and remove the pepper grinder inside then shut the cupboard",
+        "Carry the grinder to the counter top left of the stove",
+        "Place the pepper grinder on top of the counter left of the stove"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put soap in a drawer.",
+      "high_level_steps": [
+        "Go forward and then right to face the counter to the left of the sink.",
+        "Pick the soap up from the counter.",
+        "Move to the left and face the cabinets below the sink.",
+        "Open the drawer on the bottom row, second from the left and put the soap in it."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Place a rinsed piece of lettuce on the counter.",
+      "high_level_steps": [
+        "Turn right, move to the counter after the refrigerator.",
+        "Pick up the yellow handled knife from the counter.",
+        "Turn left, move to the front of the refrigerator.",
+        "Slice the lettuce in the refrigerator.",
+        "Move to the front of the refrigerator.",
+        "Put the knife in the refrigerator.",
+        "Move to the front of the refrigerator.",
+        "Pick up a slice of lettuce.",
+        "Turn left, move to the counter at the sink.",
+        "Put slice of lettuce in the sink, rinse it, pick it back up.",
+        "Turn right, move to the counter between the stove and the trash bin.",
+        "Put slice of lettuce on counter."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Clean and wash an apple piece, then microwave it. ",
+      "high_level_steps": [
+        "Move forward to the sink, turn left, walk until the stove is on your right, then turn right.",
+        "Pick up the knife on the counter.",
+        "Turn left, walk forward one step, then turn right to face the garbage can.",
+        "Cut the apple into three pieces.",
+        "Turn right, walk forward one step, then turn left to face the counter.",
+        "Place the knife on the counter.",
+        "Turn left, walk forward one step, and turn right to face the garbage can.",
+        "Pick up the piece of apple that's closest to you.",
+        "Turn around, walk to the counter, then turn left and walk to the sink.",
+        "Place the apple in the sink, rinse it, then remove it.",
+        "Turn around, walk to the wall, then turn left and walk to the microwave.",
+        "Open the microwave and put the apple piece inside."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Place the clean soap on the rack.",
+      "high_level_steps": [
+        "Turn around, walk straight to the wall, then turn left to face rack.",
+        "Look down the rack to grab the soap on top of the rack.",
+        "Turn left to walk straight, walk straight, make a quick left, then turn right, walk straight to the tub, turn right when you reach the tub, turn around to face the sink.",
+        "Place the soap in the sink, run the water, turn the water off, and grab the soap from the sink.",
+        "Turn right, walk straight, turn left to face the bathroom door, walk straight, turn left when you reach the door to face the rack.",
+        "Place the clean soap on the rack."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put a clean bar of soap in the bottom right cupboard.",
+      "high_level_steps": [
+        "Take a step forward and turn left to face the counter.",
+        "Pick up the bar of soap from between the two sinks.",
+        "Go to the front of the sink on the right.",
+        "Put the soap in the sink, rinse it off, and then pick it up.",
+        "Turn around and take a step towards the toilet. Turn back around.",
+        "Open the bottom right cupboard and put the soap inside. Close the cupboard."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "To heat an apple and place it on the table. ",
+      "high_level_steps": [
+        "Walk to the counter to the left of the stove.",
+        "Pick up the apple to the left of the kitchen utensils.",
+        "Move to face the front of the stove and look above the stove at the microwave.",
+        "Open the microwave door, put the apple inside the microwave, close the door, heat the apple, open the door, take the apple out, close the door.",
+        "Turn around and walk over to the table on the left.",
+        "Put the apple down on the table to the right of the wine bottle."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Place a pot with a yellow handle knife in it on the green table.",
+      "high_level_steps": [
+        "Turn around and walk to the bottle of wine on the green table.",
+        "Pick up the knife with the yellow handle from the table.",
+        "Turn left and walk to the stove.",
+        "Place the knife in the pot on the left of the stove.",
+        "Pick up the pot on the left of the stove.",
+        "Turn around and walk to the wine bottle on the green table.",
+        "Place the pot behind the egg on the green table."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put the two remotes on the coffee table. ",
+      "high_level_steps": [
+        "Take a step to the left.",
+        "Pick up the remote between the laptops on the couch.",
+        "Turn around, face the coffee table.",
+        "Put the remote on the coffee table beside the statue.",
+        "Turn to the left, walk to the window, turn left, face the white striped chair.",
+        "Pick up the remote off of the chair.",
+        "Turn to the left, walk to the couch, turn to the coffee table.",
+        "Put the remote on the coffee table, in front of the plant."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put the tea pot on the dresser.",
+      "high_level_steps": [
+        "Turn left, go towards the window and look down to the left.",
+        "Pick up the tea pot from the floor.",
+        "Turn left, go halfway across the room, turn left, go across the room, turn right, go across the room and turn right to the dresser.",
+        "Put the tea pot on the dresser."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Examine a credit card by the light of a tall lamp.",
+      "high_level_steps": [
+        "Turn right, cross the room and walk to the wooden coffee table on the right.",
+        "Pick up the red credit card from the right side of the table.",
+        "Turn left, hang a right at the chairs and walk to the tall lamp in the corner to the left.",
+        "Turn on the tall lamp."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put the bowl with ladle in the cabinet",
+      "high_level_steps": [
+        "Turn to your right face the table",
+        "Pick up the ladle on the table beside the knife",
+        "Turn to your right move closer to the table",
+        "Put the ladle on the bowl",
+        "Pick up the bowl with ladle",
+        "Turn to your right move forward then turn left face the cabinet",
+        "Open the right cabinet under the sink and put in the bowl with ladle then close the cabinet"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put a microwaved tomato on the counter",
+      "high_level_steps": [
+        "Turn around and go to the counter with the wine and tomato",
+        "Pick up the tomato from the counter",
+        "Turn around and go to the microwave by the refrigerator",
+        "Open the door, put the tomato in the microwave and close the door and turn microwave on. Open the door and remove the tomato",
+        "Turn to the left and face the counter to the right of the sink",
+        "Place the tomato on the counter between the sink and the cell phone"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "place a cooled cup under the spout of the coffee maker",
+      "high_level_steps": [
+        "walk to the end of the room on the right, then turn right and walk to the other end of the room past the oven",
+        "grab a cup from the bottom left cabinet",
+        "turn right and walk over to the fridge at the end of the room",
+        "place the cup inside of the fridge to cool, then take it back out",
+        "turn left and walk forwards, then turn left and walk to the microwave, but turn right to face the coffee maker next to the microwave on the right",
+        "place the cup inside of the coffee maker"
+      ]
+    },
+    {
+      "split": "valid_seen",
+      "goal": "Put a mug with a pen in it on the shelf.",
+      "high_level_steps": [
+        "Go to the shelf to your left with the plant on it.",
+        "Pick up the pen from the shelf.",
+        "Turn around and move forward to cross the room, then turn right at the end of the bed and go to the nightstand ahead.",
+        "Put the pen in the mug on the nightstand.",
+        "Pick up the mug from the nightstand.",
+        "Turn around and move forward to the end of the bed, then turn left and return to the shelf ahead.",
+        "Put the mug on the shelf in front of you."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Hang two white towels on a towel rack.",
+      "high_level_steps": [
+        "Walk straight, turn left, walk towards the wall with the white towel",
+        "Pick up the white towel on the towel ring",
+        "Turn right, walk towards the white toilet",
+        "Hang the white towel on the rack above the toilet",
+        "Turn right, walk towards the white sink",
+        "Pick up the white towel hanging from the towel ring",
+        "Turn left, walk towards the white toilet",
+        "Hang the white towel on the rack infront of the other towel"
+      ]
+    },
+    {
+      "split": "valid_unseen",
+      "goal": "Warm up the cup inside the cabinet.",
+      "high_level_steps": [
+        "Turn around towards the windows, turn left towards the coffee maker, turn right towards the loaf of bread on the counter, and then look up towards the cabinets.",
+        "Open the right cabinet and take out a green cup.",
+        "Take a step to the right to find the microwave above the stove.",
+        "Warm up the cup and take it back out of the microwave.",
+        "Take a step to the left and look up to the cabinet above the bread.",
+        "Place the cup back into the cabinet."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put a clean butter knife on a wooden table.",
+      "high_level_steps": [
+        "Turn right and walk over to the counter.",
+        "Pick up the butter knife off of the counter.",
+        "Turn around and walk forward, then turn right and walk towards the wall, turn right to face the sink.",
+        "Put the butter knife in the sink and turn on the sink, after a couple seconds turn the sink off and take out the now clean butter knife.",
+        "Walk over to the wooden table behind you.",
+        "Put the clean butter knife on the table."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Move a plate with a knife on it to the kitchen table.",
+      "high_level_steps": [
+        "Move to stand at the counter space to the left of the fridge.",
+        "Pick up the butter knife from the counter that's closest to the fridge.",
+        "Turn left to face the loaf of bread on the counter.",
+        "Place the knife on the gray plate to the right of the bread.",
+        "Pick up the plate with the knife on it from the counter.",
+        "Turn around, move past the fridge, and then turn left to get positioned between the fridge and table, facing the table.",
+        "Place the plate and knife on the table in the center of the butter knife and two heads of lettuce."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "stand two towels on the counter of the sink",
+      "high_level_steps": [
+        "go to the right of the sink",
+        "pick up the towel hanging on the rack above",
+        "take the towel to the right side of the sink",
+        "stand the towel on the counter",
+        "go to the left side of the sink",
+        "take the towel from the left above you",
+        "take the towel to the right side of the sink",
+        "stand the towel next to the first towel"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Examine a newspaper in the light of a small lamp.",
+      "high_level_steps": [
+        "Turn left to face the white table.",
+        "Pick up the newspaper off of the white table.",
+        "Turn left and walk around the coffee table to the small white table to the right of the couch.",
+        "Turn on the light of the small lamp that is on the small table in front of you."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put a chilled bottle in the cabinet right of the stove. ",
+      "high_level_steps": [
+        "Turn around, go forward, turn left, move to the sink.",
+        "Pick up the bottle on the back of the sink.",
+        "Bring the bottle to the left to the fridge.",
+        "Chill the bottle in the fridge.",
+        "Take the chilled bottle from the fridge, turn around, move to the stove, face the stove.",
+        "Open the cabinet right of the stove, put bottle in that cabinet."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Move the pan from the counter to the table.",
+      "high_level_steps": [
+        "Turn and go to the counter by the sink.",
+        "Pick up the green sponge on the counter.",
+        "Turn around and go to the pan on the counter.",
+        "Put the sponge on the pan on the counter.",
+        "Pick up the pan on the counter.",
+        "Turn around and go to the table by the window.",
+        "Put the pan on the table."
+      ]
+    },
+    {
+      "split": "valid_seen",
+      "goal": "place clean soap on top of the toilet",
+      "high_level_steps": [
+        "go to the toilet in the bathroom",
+        "pick up the soap out of the black bin to the right of the toilet",
+        "walk over to the bathroom sink",
+        "place the soap inside the sink and rinse it off, then pick it back up",
+        "walk over to the toilet again",
+        "place the soap on top of the toilet"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put the gold ornament from the coffee table, to the end table. ",
+      "high_level_steps": [
+        "Turn around and go to the buffet, then turn right and go to the coffee table.",
+        "Pick up the gold ornament, to the left of the credit card, on the coffee table.",
+        "Turn around and go to the end table across from you.",
+        "Place the gold ornament on the end table."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put a chilled bowl in a lower cabinet. ",
+      "high_level_steps": [
+        "Move to the center island.",
+        "Pick up the bowl next to the lettuce.",
+        "Bring the bowl to the fridge.",
+        "Chill the bowl in the fridge.",
+        "Bring the bowl to the counter right of the sink.",
+        "Put the bowl in the cabinet to the right below the counter."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put a chilled metal pan on the stove.",
+      "high_level_steps": [
+        "Turn left and walk up to the stove.",
+        "Pick up the metal pan off of the back left burner of the stove.",
+        "Turn right and begin walking to the sink, then hang a right and walk over to the fridge.",
+        "Open the fridge door and put the metal pan inside on the middle shelf, then close the door, after a couple seconds open the fridge door and take out the metal pan, then close the door again.",
+        "Turn left and begin walking across the room, then turn left and walk up to the stove.",
+        "Put the chilled metal pan on the front right burner of the stove."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Pick up the keys and then turn the lamp on behind the blue chair.",
+      "high_level_steps": [
+        "Turn left and head towards The blue chair in front of the blue ottoman with the newspaper on top of it.",
+        "Pick up the keys from the cushion of the blue chair.",
+        "Turn left and then right to go behind the blue chair towards the tall lamp.",
+        "Turn the tall lamp on next to the box."
+      ]
+    },
+    {
+      "split": "valid_unseen",
+      "goal": "Move the pencil to a different area of the desk.",
+      "high_level_steps": [
+        "Turn right and take one step, then turn left and walk across the room, then turn left to face the desk.",
+        "Pick up the pencil near the edge of the desk.",
+        "Turn around and take one step, then turn back around to face the desk.",
+        "Put the pencil down directly in front of the set of books on the left."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Move a white spray bottle to the toilet tank lid.",
+      "high_level_steps": [
+        "Turn left to face the cabinet next to the blue trash can.",
+        "Pick up the middle white spray bottle from the cabinet.",
+        "Turn around to walk across the room to the toilet.",
+        "Set the white spray bottle down on the toilet tank lid."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "place a rinsed off potato inside the microwave",
+      "high_level_steps": [
+        "turn around then turn to the right, then walk to the garbage bin ahead at the end of the kitchen counter top's, and turn to face it",
+        "grab a potato out of the garbage bin there",
+        "turn right and walk over to the kitchen sink ahead on the left",
+        "place the potato inside the sink to rinse it off, then take it back out",
+        "turn right and walk over to the end of the kitchen counter space where the microwave is on the left",
+        "place that potato inside of the microwave"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Examine a newspaper by the light of a floor lamp.",
+      "high_level_steps": [
+        "Turn to the right, move forward toward the door, then turn to the right and face the coffee table.",
+        "Pick up the newspaper to the right of the toy dog from the coffee table.",
+        "Turn left and move towards the door then turn right and move towards the couch, then turn left towards the wall, and then turn right and move towards the floor lamp.",
+        "Turn on the floor lamp."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put a clean bar of soap in the trash can.",
+      "high_level_steps": [
+        "Go left and stand in front of the soap on the counter.",
+        "Pick the soap up from the counter.",
+        "Go right and stand in front of the double sinks.",
+        "Put the soap in the sink to the right, turn the water on and then off and pick the soap up out of the sink.",
+        "Turn around and walk to the trash can in the corner.",
+        "Put the soap in the trash can."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put a chilled apple in a blue bin.",
+      "high_level_steps": [
+        "Turn right and walk forward, then turn left and walk over to the counter, turn left again and walk up to the microwave.",
+        "Open the microwave and take the apple out of the microwave then close the microwave.",
+        "Turn left and walk over to the fridge.",
+        "Open the fridge and put the apple inside on a shelf, then close the door, after a couple seconds open the fridge back up and remove the now chilled apple, then close the door.",
+        "Walk over to the blue bin to the left of the fridge.",
+        "Put the chilled apple into the blue bin."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put a wet soap in the left cabinet under the sink.",
+      "high_level_steps": [
+        "Turn left, head to the wall, turn left, head to the toilet.",
+        "Pick up the soap on the toilet.",
+        "Turn around and bring the soap to the sink.",
+        "Wet the soap in the sink with water.",
+        "Bring the wet soap to the left cabinet under the sink.",
+        "Put the wet soap in the left cabinet under the sink."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "get a chalice, warm it in the microwave then put it back where it came from",
+      "high_level_steps": [
+        "walk over to the counter where the microwave is",
+        "open the upper cabinet and take the chalice out",
+        "approach the microwave with the chalice",
+        "warm the chalice in the microwave then remove",
+        "raise the chalice up toward the cabinet above the microwave",
+        "put the chalice back in the cabinet"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Place a cool plate on the wooden shelf.",
+      "high_level_steps": [
+        "Turn right, walk past the fridge on your left, then turn right towards the microwave above the stove.",
+        "Take out the plate from the microwave.",
+        "Turn right, walk towards the sink, and then turn right towards the fridge.",
+        "Open the fridge, place the plate on the top shelf to cool it, and take it back out.",
+        "Turn right towards the wooden shelves.",
+        "Place the plate to the right of the green sponge on the shelves."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Place a warmed apple in the fridge.",
+      "high_level_steps": [
+        "Walk straight towards the stove and then turn right towards the sink.",
+        "Pick up the apple inside the sink.",
+        "Turn left to face the microwave.",
+        "Place the apple in the microwave, heat it up, and take it out.",
+        "Turn around and walk towards the fridge on your left.",
+        "Open the fridge and place it on the bottle shelf inside the fridge."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Taking items in and out of the sink",
+      "high_level_steps": [
+        "Go to the table across the room",
+        "Pick up the knife near the egg",
+        "Turn left and go to the sink behind you",
+        "Put the knife in the sink",
+        "Take the martini glass from the sink",
+        "Turn around and face the counter",
+        "Put the martini glass on the counter"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put the dirty fork in a cup to place it in the sink.",
+      "high_level_steps": [
+        "Walk towards the opposite end of the kitchen and then turn right to find a fork on the counter.",
+        "Pick up the fork from the counter.",
+        "Turn left to face the pan on the counter.",
+        "Open the cabinet below the pan and place the fork in the cup in the cabinet.",
+        "Take out the cup from the cabinet.",
+        "Turn left and walk a few steps and then turn right to face the sink.",
+        "Place the cup in the sink in between the pot and another cup."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Place a cleaned cup on a shelf.",
+      "high_level_steps": [
+        "Turn right and walk forward to the cabinet above the bottle of wine on the counter.",
+        "Take out the cup from the cabinet and close the cabinet.",
+        "Turn right and walk forward to the sink.",
+        "Put the cup in the sink, rinse it off, and take it back out.",
+        "Turn around and walk forward across the room to the brown shelves on the right by the wall.",
+        "Put the cup on the middle shelf, to the right of the salt container."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put a heated egg in the trash can. ",
+      "high_level_steps": [
+        "Turn around, go around the left side of the table, then move around the table and turn right to face the table.",
+        "Pick up the egg on the table.",
+        "Bring the egg to the microwave on the left, above the stove.",
+        "Heat the egg in the microwave.",
+        "Take the heated egg to the trash can at the right of the stove.",
+        "Put the heated egg in the trash can."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Place the cooked slice of bread on the counter by the spoon.",
+      "high_level_steps": [
+        "Walk to the counter to the left of the sink.",
+        "Pick up the knife off of the counter.",
+        "Walk to the loaf of bread on the counter in front of the microwave.",
+        "Slice the loaf of bread with the knife.",
+        "Take the knife to the microwave.",
+        "Put the knife in the microwave.",
+        "Go back to the loaf of bread.",
+        "Pick up a slice of bread from the loaf.",
+        "Go to the microwave with the slice of bread.",
+        "Cook the slice of bread in the microwave.",
+        "Walk over to the counter in front of the spoon.",
+        "Place the slice of bread on the counter by the spoon."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Move two bottles of lotion to the counter.",
+      "high_level_steps": [
+        "Turn left and walk towards the counter, then hang a left and walk up to the wall, turn right and walk over to the counter.",
+        "Open the rightmost cabinet door below the left sink and take out the bottle of lotion, then close the cabinet door.",
+        "Look up at the counter.",
+        "Put the bottle of lotion on the front edge of the counter in between the two sinks.",
+        "Turn right and walk towards the door, then hang a right and walk around the toilet.",
+        "Pick up the bottle of lotion off of the toilet tank.",
+        "Turn right and walk towards the shower, then turn left and walk over to the leftmost sink.",
+        "Put the bottle of lotion on the counter behind the bar of soap in between the two sinks."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put a bat on the bed.",
+      "high_level_steps": [
+        "Walk forward to the bed then turn right and walk to the mirror on the wall.",
+        "Pick up the baseball bat that's on the floor.",
+        "Turn right and take a small step forward then turn right and walk until you're even with the middle of the side of the bed then when you are turn right and walk to the bed.",
+        "Stand the bat on end near the left laptop's bottom left side if you were facing the laptop."
+      ]
+    },
+    {
+      "split": "valid_seen",
+      "goal": "Put a clean bar of soap under the sink. ",
+      "high_level_steps": [
+        "Turn to the garbage can, on the floor to your right.",
+        "Pull out the bar of soap inside the garbage can.",
+        "Move to your right, away from the sink, then go across the room to the last sink on your left.",
+        "Place the bar of soap in the sink, turn the water on, rinse the soap off, turn the water off, and remove the bar of soap from the sink.",
+        "Step back from the sink.",
+        "Place the bar of soap in the right cabinet, under the sink."
+      ]
+    },
+    {
+      "split": "valid_unseen",
+      "goal": "To acquire an odd item as place it where it is not useful.",
+      "high_level_steps": [
+        "Turn to the left and make an semi circle as to reach the wooden table.",
+        "Take only the salt container from the table.",
+        "turn left and to your right with the salt container.",
+        "Place the container under the cabin drawer under in the drawer on the left."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put two salt shakers on a shelf.",
+      "high_level_steps": [
+        "Turn left and make your way over to the fridge so you are standing on the left side of the fridge then turn left and face the counter.",
+        "Pick up the salt shaker that's to the left of the fridge.",
+        "Turn left and walk to the stove then turn left and walk over to the shelves in the right corner on the wall in front of you.",
+        "Put the salt shaker on the second shelf to the left on the edge near you.",
+        "Turn left and take a step then turn left and walk to the counter with the toaster on it.",
+        "Open the cupboard that's above the left side of the coffee pot and take down the salt shaker.",
+        "Walk back over to where you put the first salt shaker.",
+        "Put the salt shaker to the right of the other salt shaker."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put a warm potato in the fridge.",
+      "high_level_steps": [
+        "Turn around and go forward to the counter, then turn right and go to the sink on your left.",
+        "Pick up the potato in the sink.",
+        "Turn left and go to the microwave ahead.",
+        "Open the microwave, put the potato inside and heat it, then take the potato out.",
+        "Turn around and move forward to the counter, then turn right and go to the fridge at your left.",
+        "Open the fridge, put the potato inside, then close the fridge."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Pick up a book to look at under a lit lamp.",
+      "high_level_steps": [
+        "Turn around to walk towards the nightstand.",
+        "Pick up the book from the nightstand.",
+        "Make a left to walk towards the dresser.",
+        "Turn on the lamp on the dresser."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "move the bat from the floor to the bed",
+      "high_level_steps": [
+        "turn left, walk forward, turn left, walk forward to the wall",
+        "pick up the bat that is on the floor",
+        "turn around, walk forward, turn right to face the bed",
+        "put the bat on the bed"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put a clean spoon on the counter.",
+      "high_level_steps": [
+        "Take a step to your right then walk to the counter in front of you.",
+        "Pick up the spoon that's in front of you. under the yellow handled knife",
+        "Take a step to your right so you face the sink.",
+        "Wash the spoon in the sink and then pick it back up and shut off the water.",
+        "Turn around and walk to the counter then step to your left and walk to the stool then turn right.",
+        "Put the spoon on the counter to the left of the potato."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Place a tomato slice on the table.",
+      "high_level_steps": [
+        "Turn right and face the counter on your left.",
+        "Take the knife off of the counter to your left.",
+        "Turn right then face the tomato on top of the counter to your left.",
+        "Slice the tomato on the counter in front of you.",
+        "Turn left then face the counter on your right.",
+        "Place the knife on the counter in front of you.",
+        "Turn right then face the tomato on the counter to your left.",
+        "Take a tomato slice off of the counter in front of you.",
+        ".Turn right and face the counter with the plate and pan in front of you.",
+        "Place the tomato slice on the plate on the counter in front of you.",
+        "Take the plate off of the counter in front of you.",
+        "Turn right, then right again and face the table to your right.",
+        "Place the plate on the table in front of you."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "put ladle into frying pan, put both into sink basin",
+      "high_level_steps": [
+        "turn around, walk through kitchen, stop in front of counter to the right of the kitchen sink",
+        "pick up ladle with aqua handle",
+        "move slightly to the right and face the counter top with a frying pan",
+        "put ladle into frying pan on the counter",
+        "pick up the frying pan from the counter",
+        "turn left, walk to sink, turn to face sink",
+        "put frying pan into sink basin"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Place a piece of clean lettuce in the trash bin. ",
+      "high_level_steps": [
+        "Turn around completely and walk up to the white table in front of you.",
+        "Pick up the piece of lettuce.",
+        "Turn to your left and walk up to the sink.",
+        "Rinse off the lettuce in the sink.",
+        "Turn around completely and head to the trash bin on your right.",
+        "Place the lettuce in the trash bin."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "turn on the lamp to examine the bat",
+      "high_level_steps": [
+        "turn to the left and go forward to the desk and turn to the right and take a step and turn to the left and take a step and go forward to the bat",
+        "pick up the bat next to the desk",
+        "turn to the opposite direction and take a step and turn to the right and go forward to the bed and turn to the right and take a step forward",
+        "turn on the lamp on the desk"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "to place all credit cards inside the middle drawer of the dresser",
+      "high_level_steps": [
+        "turn left then turn right and walk towards the door turn left at the lap top",
+        "look down at the credit card on the dresser and pick it up",
+        "turn right then at the end of the dresser turn right again then turn around back towards the dresser",
+        "Open the middle drawer and place the credit card inside",
+        "close the drawer and turn right then turn back to the dresser walk forward turn left",
+        "pick up another credit card from the dresser",
+        "turn left walk forward and then turn right at the end of the dresser",
+        "open the drawer and place the second credit card in and close it."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Examine a watering can by the light of a tall lamp.",
+      "high_level_steps": [
+        "Turn around and begin walking towards the window, then hang a right and walk over to the end table with a plant in the corner of the living room right ahead of you.",
+        "Pick up the watering can on the ground to the left of the table with a plant on it.",
+        "Turn right and begin walking across the room, then hang a right just before the television and walk over to the tall lamp in the corner of the living room.",
+        "Turn on the tall lamp."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "To put the knife in the drawer. ",
+      "high_level_steps": [
+        "Turn around and walk across the room to the counter.",
+        "Pick up the knife next to the sink.",
+        "Turn to the left.",
+        "Open the drawer on the right, to the left of the sink, and place the knife inside."
+      ]
+    },
+    {
+      "split": "valid_unseen",
+      "goal": "turn on a lamp while holding a baseball bat",
+      "high_level_steps": [
+        "walk forwards a bit towards the baseball bat",
+        "grab the baseball bat leading against the wall",
+        "turn and walk over to the right side of the computer desk",
+        "turn on the lamp on the computer desk"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Place a chilled loaf of bread on a counter.",
+      "high_level_steps": [
+        "Walk ahead a few steps and then left towards the bread on the counter.",
+        "Pick up the loaf of bread.",
+        "Turn around and veer left to the fridge.",
+        "Place the bread in the fridge, to the right of the apple.  Close the door, wait a moment, and then take the bread out again.",
+        "Turn right and walk to the end of the counter.",
+        "Place the bread on the counter in front of the toaster."
+      ]
+    },
+    {
+      "split": "valid_seen",
+      "goal": "Put a watch on a table.",
+      "high_level_steps": [
+        "Move to the left to face the television on the television stand.",
+        "Pick the watch up from the television stand.",
+        "Move to the right and face the table to the right of the television stand.",
+        "Put the watch on the table on top of the credit card."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Place two boxes of tissues from the table into the blue recycling container.",
+      "high_level_steps": [
+        "Turn right and go to the head of the dining table.",
+        "Pick up the box of tissues.",
+        "Turn right and go to the blue recycling container in the corner.",
+        "Place the box of tissues in the blue recycling container.",
+        "Turn left and go to the foot of the table.",
+        "Pick up the box of tissues there.",
+        "Turn left and go across the room to the blue recycling container in the corner.",
+        "Place the box of tissues in the blue recycling container."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put the glass vase on the coffee table.",
+      "high_level_steps": [
+        "Move forward towards the TV.",
+        "Pick up the glass vase from the TV stand.",
+        "Turn around and face the coffee table.",
+        "Place the vase onto the coffee table."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Place a chilled plate on a table.",
+      "high_level_steps": [
+        "Walk ahead to the counter, then turn right to face the stove.",
+        "Take the plate out of the cabinet above the stove.",
+        "Turn right and walk to the fridge.",
+        "Place the plate in fridge on the top shelf, right in the center. Close the door, wait a moment, and take it out again.",
+        "Take a couple steps right.",
+        "Place the plate on the table, in the front right corner."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put a chilled slice of bread in the microwave.",
+      "high_level_steps": [
+        "Turn around and go to the stove.",
+        "Pick up the knife to the left of the stove.",
+        "Turn right and go to the sink.",
+        "Cut the bread to the left of the sink.",
+        "Turn to the left and go to the microwave.",
+        "Put the knife in the microwave.",
+        "Turn right and go back to the sink.",
+        "Pick up a slice of bread off the counter.",
+        "Turn right and go to the fridge.",
+        "Put the slice of bread in the fridge, close the fridge, open the fridge and pick it back up.",
+        "Turn left and go back to the microwave.",
+        "Put the slice of bread in the microwave."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put a mug with a pen in it on the counter.",
+      "high_level_steps": [
+        "Turn left and take a step forward, then walk over to the white counter.",
+        "Pick up the black pen off of the counter.",
+        "Turn around and walk forward, then hang a right and walk up to the black table.",
+        "Put the black pen in the leftmost mug on the table.",
+        "Pick up the mug with the pen in it off of the table.",
+        "Walk back over to the white counter.",
+        "Put the mug with the pen in it on the counter to the left of the laptop."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put a heated apple on the table, next to the potato. ",
+      "high_level_steps": [
+        "Turn around, move to the table on the right.",
+        "Pick up the red apple on the front of the table.",
+        "Turn left and bring the apple to the microwave next to the sink.",
+        "Heat the apple in the microwave.",
+        "Take the heated apple out of the microwave, turn around, move to the table on the right.",
+        "Put the heated apple on the table, left of the potato."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "drop two books on the bed",
+      "high_level_steps": [
+        "move left to the table",
+        "pick up the book",
+        "turn right to the bed",
+        "drop the book on the bed",
+        "turn left to the table",
+        "pick up the book from the table",
+        "turn right to the bed",
+        "drop the book on the bed"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "To chill a pan and put it in the sink. ",
+      "high_level_steps": [
+        "Turn right and walk to the counter to the left of the stove.",
+        "Pick up the pan from the counter.",
+        "Turn right and walk to the fridge on the left.",
+        "Open the fridge door, place the pan inside of the fridge, close the door, open the door, take the pan out of the fridge, close the door.",
+        "Turn left and walk to the sink on the right.",
+        "Put the pan down in the sink."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Move a cell phone in a bowl to the coffee table. ",
+      "high_level_steps": [
+        "Turn and cross the room until you get to the stairs, turn right again and move through the kitchen to the head of the table.",
+        "Pick the cell phone up from the table.",
+        "Carry the cell phone to the other end of the table.",
+        "Place the phone in the grey bowl on the table.",
+        "Pick up the bowl with the phone in it from the table.",
+        "Move along side the kitchen table to the living room and end standing between the sofa and the coffee table.",
+        "Place the bowl with the cell phone in it on the coffee table to the left of the laptop."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put a cup with a butter knife in it on the counter.",
+      "high_level_steps": [
+        "Turn around ad walk over to the wall, then turn right and walk up to the white table.",
+        "Pick up the butter knife off of the white table.",
+        "Turn right and begin walking across the room, then hang a right and walk up to the counter and look up at the upper cabinets.",
+        "Open the cabinet door and put the butter knife in the cup inside.",
+        "Take the cup with the butter knife in it out of the cabinet and close the door.",
+        "Turn right and take a step forward, then turn left to face the counter.",
+        "Put the cup with the butter knife in it on the front edge of the counter."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put the two cd on the desk shelf",
+      "high_level_steps": [
+        "Turn left and head to the desk",
+        "Pick up the cd on the desk",
+        "Turn left walk to the left and head to the other side of the desk",
+        "Put the cd under the desk",
+        "Move closer to the desk",
+        "Pick up the cd on the desk beside the laptop",
+        "Turn around and move backwards look down",
+        "Put the cd beside the other under the desk"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Place a towel on a toilet tank.",
+      "high_level_steps": [
+        "Head right to the black vanity with sinks.",
+        "Open the lower right cabinet under the left sink, pick up the red towel from inside and close the door.",
+        "Turn around and walk to the white toilet on the right.",
+        "Put the red towel on the left side of the toilet tank."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Examine a silver disc by the light of a small lamp.",
+      "high_level_steps": [
+        "Turn around and walk to the white dresser.",
+        "Pick up the silver disc to the left of the book on the dresser.",
+        "Turn left and walk to the side of the dresser on the right with the lamp.",
+        "Turn on the small lamp."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Move a watch to a small wooden table.",
+      "high_level_steps": [
+        "Walk over to the wooden table with the television on it.",
+        "Pick up the middle watch off of the wooden table.",
+        "Turn right and walk over to the couch, then turn left to face the small wooden table with the newspaper on it.",
+        "Put the watch on the table in front of the newspaper."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put a heated tomato on the small black table. ",
+      "high_level_steps": [
+        "Turn right to face the tomato on the table.",
+        "Pick up the tomato on the table.",
+        "Bring the tomato to the microwave in front of you.",
+        "Heat the tomato in the microwave.",
+        "Take the heated tomato back across the room to the small black table in the opposite corner on the right.",
+        "Put the heated tomato on the right side of the black table, in front of the sponge."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Move a purple pillow from the couch to a black chair.",
+      "high_level_steps": [
+        "Turn right and walk forward, then hang a right and walk up to the left end of the couch.",
+        "Pick up the purple pillow off of the couch.",
+        "Turn around and walk across the room, then hang a left and walk over to the black chair.",
+        "Put the purple pillow standing up on the seat of the black chair."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Examine a cell phone using the light of a lamp. ",
+      "high_level_steps": [
+        "Turn right, walk to the wall, turn right again, walk to the mirror, then turn right again to face the side of the chair.",
+        "Pick up the cell phone that is sitting on the chair.",
+        "Turn right, walk a few steps, turn left, walk forward a bit, then turn left to face the desk.",
+        "Turn on the lamp that is sitting on the desk."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put a cooked slice of potato in the fridge.",
+      "high_level_steps": [
+        "Turn left and go to the sink.",
+        "Pick up the knife in the sink.",
+        "Cut the potato in the sink.",
+        "Move to the right side of the sink.",
+        "Put the knife in the sink.",
+        "Move to the left side of the sink.",
+        "Pick up a slice of potato.",
+        "Turn right and go to the microwave.",
+        "Cook the slice of potato in the microwave and pick it back up.",
+        "Turn right and go to the fridge.",
+        "Put the slice of potato in the middle of the second shelf in the fridge."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Look at a box by the light of a lamp.",
+      "high_level_steps": [
+        "Walk ahead to the box on the floor.",
+        "Pick up the box on the floor.",
+        "Turn around and walk to the desk.",
+        "Turn on the desk lamp."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put a bottle on the back of a toilet.",
+      "high_level_steps": [
+        "Turn around and face the sinks.",
+        "Pick the bottle up from the counter between the sinks.",
+        "Turn to the left and face the toilet.",
+        "Put the bottle on the back of the toilet."
+      ]
+    },
+    {
+      "split": "valid_seen",
+      "goal": "Put a large metal pan with an apple slice in it in the fridge.",
+      "high_level_steps": [
+        "Turn right and take a step forward, then turn right again and walk up to the counter to the left of the oven.",
+        "Pick up the butter knife off of the counter in front of you.",
+        "Turn left and take a step forward, then turn right to face the counter.",
+        "Use the butter knife to slice the apple on the counter into three pieces.",
+        "Put the knife down on the loaf of bread that is on the counter.",
+        "Pick up one of the apple slices.",
+        "Turn around and take a step forward, then turn left and walk over to the oven.",
+        "Put the apple slice in the large metal pan that is on the front left burner of the stove.",
+        "Pick up the large metal pan with the apple slice in it.",
+        "Turn left and begin walking across the room, then turn left again and walk up to the fridge.",
+        "Open the fridge and place the large metal pan with the apple slice in it on the second shelf from the top, then close the fridge doors."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Take an alarm clock to move it to the desk.",
+      "high_level_steps": [
+        "Turn to your left then straight and back around to face the alarm clocks on the table.",
+        "Pick up the alarm clock towards the back.",
+        "Turn left with the alarm clock and walk straight and turn right facing the desk.",
+        "Place the alarm clock on the desk in the front."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put two rags on the shelf.",
+      "high_level_steps": [
+        "Turn left and go forward to the shelves, then look down.",
+        "Pick up the black rag from the floor.",
+        "Look up to the shelves.",
+        "Put the black rag on the bottom shelf.",
+        "Look back down to the floor.",
+        "Pick up the yellow rag on the floor.",
+        "Look up to the shelves.",
+        "Put the yellow rag on the bottom shelf, on top of the black rag."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put the pillows on the arm chair",
+      "high_level_steps": [
+        "Walk forward and around the coffee table to the sofa",
+        "Pick up the left most pillow from the sofa",
+        "Turn left and walk forward to the right most arm chair",
+        "Put the pillow down on the arm chair",
+        "Turn right and walk back down to the right side of the sofa",
+        "Pick up the pillow from the sofa",
+        "Turn left and walk back over to the right most arm chair",
+        "Put the pillow on the chair to the right of the other pillow"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put a book on the bed. ",
+      "high_level_steps": [
+        "Turn right, move to the desk across the room.",
+        "Pick up the book on the desk.",
+        "Turn around, bring the book to the bed.",
+        "Put the book on the bed."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put a pencil in a bin.",
+      "high_level_steps": [
+        "Move to the desk to the right of you",
+        "Pick up a pencil from the desk",
+        "Place the pencil in the bin to the left of the desk",
+        "Place the pencil in the bin"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put the chilled mug in the cabinet",
+      "high_level_steps": [
+        "Turn left walk forward then head to the left cabinet above the microwave",
+        "Open the cabinet and pick up the mug then close the cabinet",
+        "Turn right then walk forward head to the fridge",
+        "Open the fridge put in and out the mug then close the fridge",
+        "Turn left and head to the cabinet beside the fridge",
+        "Open the cabinet put in the mug then close the cabinet"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "To move a rag from the wall to the bath tub.",
+      "high_level_steps": [
+        "Step forward to face the rag on the wall.",
+        "Pick up the rag on the wall.",
+        "Turn left and step forward to face the bath tub.",
+        "Place the rag in the bath tub."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Close the cardboard box on the wooden desk with a credit card in it.",
+      "high_level_steps": [
+        "Turn left and walk towards the door, then hang a right and walk up to the cardboard box on the ground.",
+        "Pick up the cardboard box off of the ground.",
+        "Turn right and walk over to the wall, then turn right and walk up to the desk.",
+        "Put the cardboard box on the desk.",
+        "Turn around and take a step forward, then turn left and begin walking across the room, hang a left and walk up to the wooden desk.",
+        "Pick up the leftmost credit card off of the wooden desk.",
+        "Turn around and walk forward, then turn right and walk over to the wall, turn right again and walk up to the wooden desk.",
+        "Put the credit card into the cardboard box that is on the wooden desk."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put the cleaned soap on the toilet",
+      "high_level_steps": [
+        "Turn left and walk over to the left side of the cabinet by the toilet",
+        "Pick up the bar of soap from the top of the cabinet",
+        "Turn around and walk to the bathroom sink",
+        "Rinse the soap bar under water in the sink",
+        "Turn around and carry the soap bar over to the toilet",
+        "Put the soap down on top of the back of the toilet"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Examine a clock using the light of a lamp. ",
+      "high_level_steps": [
+        "Turn to the left and move forward to the window ledge.",
+        "Pick up the clock that is on the window ledge.",
+        "Turn around completely and walk over to the small stand that is to the right of the door.",
+        "Turn on the lamp that is on the small stand."
+      ]
+    },
+    {
+      "split": "valid_seen",
+      "goal": "Place a pan containing a spatula on the kitchen counter.",
+      "high_level_steps": [
+        "Turn right and move to the table in front of the window and to the left of the red garbage bin.",
+        "Pick up the spatula to the right of the head of lettuce on the table.",
+        "Move slightly to the left towards the door and look down at the table.",
+        "Place the spatula on the pan to the left of the fork on the table.",
+        "Pick up the pan containing the spatula from the table.",
+        "Turn right and move past the toaster and towards the range then turn left and face the kitchen counter.",
+        "Place the pan containing the spatula on the edge of the kitchen counter to the right of the toaster."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "place a cooled tomato slice inside of the microwave",
+      "high_level_steps": [
+        "walk to the kitchen counter to the right of the fridge just up ahead on the left",
+        "grab a knife off of the kitchen counter there",
+        "cut up the tomato on the kitchen counter to your right",
+        "look up and move over to the front of the fridge to your left",
+        "place the knife down inside of the fridge there",
+        "turn right and walk to the kitchen counter, then turn left to face it",
+        "grab a tomato slice off of the kitchen counter there",
+        "move left to the front of the fridge again",
+        "place the tomato slice inside of the fridge, let it cool, then take it back out",
+        "turn right and walk over to the microwave on the right side of the room",
+        "place the tomato slice inside of the microwave"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put a heated slice of tomato on the table.",
+      "high_level_steps": [
+        "Go to the round black table in the left corner.",
+        "Pick up the gray knife.",
+        "Turn around and go to the counter on the right of the sink.",
+        "Slice the red tomato on the right.",
+        "Turn around and go to the small black table in the right corner.",
+        "Put the gray knife on the table in front of the chef's knife.",
+        "Go back to the counter next to the sink.",
+        "Pick up one slice of tomato.",
+        "Turn around and go to the microwave above the stove on the right.",
+        "Microwave the slice of tomato and take it out.",
+        "Turn around and go back to the small black table on the right.",
+        "Place the heated tomato slice in between other tomatoes."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Set a cold piece of bread on the counter.",
+      "high_level_steps": [
+        "Go to the counter to the left of the stove.",
+        "Pick up the chef's knife between the two loaves of bread.",
+        "Move to the end of the counter with the two loaves of bread.",
+        "Slice the bread closest to the edge of the counter.",
+        "Go across the room to the fridge.",
+        "Put the chef's knife in the fridge.",
+        "Go back to the end of the counter with the sliced bread.",
+        "Pick up a slice of bread on the counter.",
+        "Take the slice of bread to the fridge.",
+        "Cool off the slice of bread in the fridge.",
+        "Take the cold bread to the counter to the left of the fridge.",
+        "Set the cold bread down on the counter to the right of the wine bottle."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put cold lettuce in the sink.",
+      "high_level_steps": [
+        "Turn right to face the table.",
+        "Pick up the lettuce on the table, next to the bread.",
+        "Turn around and go forward with the counter, then turn left and go to the fridge.",
+        "Open the fridge, put the lettuce inside and chill it, then take the lettuce out.",
+        "Turn around and go to the sink.",
+        "Put the lettuce in the sink."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Move a washed bar of soap to the dresser. ",
+      "high_level_steps": [
+        "Turn and go to the trashcan by the sink.",
+        "Pick up a bar of soap in the trashcan.",
+        "Turn around and go to the sink.",
+        "Wash the bar of soap in the sink.",
+        "Turn and go to dresser.",
+        "Put the bar of soap in the dresser."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Place a washed slice of lettuce on the table.",
+      "high_level_steps": [
+        "Turn right and move to stand facing the white table with the brown chair to your left.",
+        "Pick up the sharp knife with yellow handle that's close the chair.",
+        "Use the knife to slice the head of lettuce on the table.",
+        "Move a step to the right while carrying the knife.",
+        "Place the knife on the table in front of the loaf of bread.",
+        "Move a step to the left, so you're standing directly in front of the head of lettuce.",
+        "Pick up a slice of lettuce from the table.",
+        "Turn right and carry the lettuce to the sink.",
+        "Place the lettuce in the right side of the sink, turn on the water, and then remove once rinsed.",
+        "Turn left and carry the lettuce back to the table.",
+        "Place the lettuce on the table in front of the tomato."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "To move two remotes to the chair. ",
+      "high_level_steps": [
+        "Turn and walk to the black coffee table in the middle of the room.",
+        "Pick up the remote closest to you.",
+        "Walk over to the tan chair to the left of the couch.",
+        "Put the remote down on the chair.",
+        "Turn around and walk back over to the coffee table.",
+        "Pick up the remaining remote from the coffee table.",
+        "Walk back over to the tan chair.",
+        "Put the remote down on the chair to the left of the first remote."
+      ]
+    },
+    {
+      "split": "valid_seen",
+      "goal": "Put two books on a desk.",
+      "high_level_steps": [
+        "Turn around and hang right to the side table next to the bed.",
+        "Pick up the book on the side table.",
+        "Turn around and walk to the desk.",
+        "Place the book on the desk to the left of the alarm clock.",
+        "Turn around and walk to the bed.",
+        "Pick up the book closest to you on the bed.",
+        "Turn around and go back to the desk.",
+        "Place the book on the desk behind the first one."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put two salt shakers on a shelf.",
+      "high_level_steps": [
+        "Turn around and walk to the closest short side of the kitchen island.",
+        "Pick up the salt shaker.",
+        "Turn left and veer left to the shelves in the corner.",
+        "Put the salt shaker on the second to bottom shelf.",
+        "Turn around and walk to the furthest short side of the kitchen island.",
+        "Pick up the salt shaker on the counter.",
+        "Walk ahead and right, back to the shelves.",
+        "Put the salt shaker on the shelf to the right of the first one."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Place a chilled loaf of bread near the toaster.",
+      "high_level_steps": [
+        "Turn right, go to the window, and turn left toward the small gray counter.",
+        "Take the bread from the small gray counter.",
+        "Turn left, go to the brown door, turn left, and go to the refrigerator.",
+        "Open the refrigerator, put the bread in the refrigerator, close the refrigerator, wait for four seconds, open the refrigerator, take the bread from the refrigerator, and close the refrigerator.",
+        "Turn left, go to the sink, turn left, and go to the toaster.",
+        "Place the bread on the gray counter near the toaster."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put a chilled coffee mug in the coffee machine receptacle.",
+      "high_level_steps": [
+        "Take a step forward, then turn left and walk across the room to the counter, turn right and walk over to the microwave at the end of the counter.",
+        "Open the microwave that is on the counter and pick up the black coffee mug from inside, then close the door.",
+        "Turn left and walk over to the oven, then turn left again and walk up to the fridge",
+        "Open the fridge door and place the black mug inside on the bottom shelf, then close the fridge door, after a couple seconds open the fridge back up, remove the chilled black mug and then close the door.",
+        "Turn left and walk over to where the coffee machine is on the counter.",
+        "Place the chilled black coffee mug in the coffee machine receptacle."
+      ]
+    },
+    {
+      "split": "valid_seen",
+      "goal": "Place a clean knife in a drawer.",
+      "high_level_steps": [
+        "Walk ahead, and then veer right to the sink.",
+        "Pick up the knife to the left of the sink.",
+        "Take a step right.",
+        "Wash the knife in the sink.",
+        "Turn left.",
+        "Open the drawer in the corner, the one on the right side counter. Place the knife in it."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Place a chilled potato in a microwave.",
+      "high_level_steps": [
+        "Turn right and walk to the white door, then turn right and walk to the counter with the toaster on it.",
+        "Pick up the potato on the counter.",
+        "Turn left and walk to the fridge.",
+        "Place the potato in the fridge, in front and to the left of the lettuce. Close the door, wait a moment, and take it out again.",
+        "Take a step right and face the microwave.",
+        "Place the potato in the microwave."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put a spoon and pan in the sink.",
+      "high_level_steps": [
+        "Turn left and walk to the kitchen sink.",
+        "Pick up the spoon on the counter to the right of the kitchen sink.",
+        "Turn around and walk toward the door on the opposite wall from the kitchen sink.  Turn right at the door and walk toward the kitchen table.",
+        "Put the spoon down on the pan next to the toaster.",
+        "Pick up the pan with the spoon.",
+        "Turn right and walk toward the kitchen sink.",
+        "Put the pan with the spoon down in the sink."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Putting a pan with a sliced tomato in it on the table",
+      "high_level_steps": [
+        "Turn left and go to the counter with the toaster",
+        "Grab the knife off of the counter",
+        "Turn right and go to the trash can",
+        "Slice the tomato in the trash can",
+        "Put the knife in the trash can",
+        "Grab a slice of the tomato from the trash can",
+        "Turn around and go to the oven",
+        "Put the tomato in the pan in the top left stove",
+        "Grab the pan from the top left stove",
+        "Turn around and go to the left of the table",
+        "Put the pan on the table"
+      ]
+    },
+    {
+      "split": "valid_unseen",
+      "goal": "Put a spoon in a mug on a counter.",
+      "high_level_steps": [
+        "Turn right and go forward to the counter to the left of the stove.",
+        "Take the left spoon that is on the counter.",
+        "Turn left and go forward and to the brown shelf on the wall straight ahead.",
+        "Place the spoon in the white mug on the shelf.",
+        "Pick up the mug off the shelf.",
+        "Turn right and go to the counter left of the stove.",
+        "Place the mug on the counter under the spoon."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Cool a slice of bread and place it in the trash can.",
+      "high_level_steps": [
+        "Turn left and step forward to face the table.",
+        "Pick up the knife on the table.",
+        "Walk around to face the bread loaf on the opposite side of the table.",
+        "Cut the loaf of bread on the edge of the counter into slices.",
+        "Walk around the center table to face the trash can on the floor.",
+        "Place the knife in the trash can on the floor.",
+        "Walk around to face the bread loaf on the opposite side of the table.",
+        "Pick up a slice of bread on the table.",
+        "Turn around and step forward to face the fridge.",
+        "Cool the bread slice in the fridge and then remove it.",
+        "Turn around and walk across the room to face the trash can on the floor.",
+        "Place the bread slice in the trash can on the floor."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put the rag in the drawer.",
+      "high_level_steps": [
+        "Move forward, then turn left to approach the counter to the left of the sink.",
+        "Pick up the rag on the counter, to the left of the sink.",
+        "Turn around, move straight, then turn around to face the drawers beneath the sink.",
+        "Open the drawer on the bottom and second to the right, and then put the rag inside."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Place a slice of microwaved bread on the counter.",
+      "high_level_steps": [
+        "Turn left and walk to the counter.",
+        "Pick up the knife on the counter.",
+        "Turn right then turn left and approach the bread on the counter.",
+        "Slice the bread on the counter.",
+        "Make a 360 degree turn and walk to the cabinet under the counter.",
+        "Open the right cabinet, place the knife inside, and close the door.",
+        "Look up at the bread on the counter.",
+        "Take a slice of bread from the loaf.",
+        "Turn around and walk to the microwave.",
+        "Open the door, place the bread inside, close the door, and turn the microwave on. Remove the bread when done.",
+        "Take a step to the left.",
+        "Place the slice of bread on the counter."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "place a paper box in the trash can",
+      "high_level_steps": [
+        "turn right and head towards the shelf",
+        "pick up the paper box from the top of the cupboard",
+        "turn around and head towards the bin",
+        "trash the paper box"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put two bars of soap into a bath tub basin.",
+      "high_level_steps": [
+        "Turn around towards the bar of soap on the counter.",
+        "Pick up the bar of soap from the counter.",
+        "Turn around and walk to the bath tub.",
+        "Put the bar of soap in the bath tub basin, to the left of the red cloth.",
+        "Pick up the bar of soap on the counter of the bath tub.",
+        "Put that bar of soap into the bath tub basin, to the left of the first bar of soap."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Wash and move a knife.",
+      "high_level_steps": [
+        "Go straight to stove, turn right to face sink.",
+        "Pick up the knife on the right.",
+        "Position self in front of left side of sink, in front of glass and knife.",
+        "Place knife in left side of sink on the right side, blade facing you.  Turn on water, turn off water, drain water.  Pick up knife from the sink.",
+        "Turn around to face knife.",
+        "Place knife on sink ledge, in front and slightly to the right of the other knife."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Place cold bread on the counter.",
+      "high_level_steps": [
+        "Turn right then face the sink on your left.",
+        "Take the knife from the sink in front of you.",
+        "Turn left then face the counter to your right.",
+        "Slice the bread on the counter in front of you.",
+        "Turn around and face the sink to your left.",
+        "Place the knife in the fridge and close it.",
+        "Turn around and face the counter with the bread on your right.",
+        "Take a slice of bread from the counter in front of you.",
+        "Turn around then face the fridge to your left.",
+        "Place the bread in the fridge for a bit then take it out.",
+        "Turn around and face the counter to your right.",
+        "Place bread on the counter in front of you."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "put a pencil on the desk",
+      "high_level_steps": [
+        "turn around and move to the carpet and turn to the left to then night table on the left side of the bed",
+        "pick up the pencil that is on the night table",
+        "turn around and move forward to the end of the bed and then turn left and move to the white desk",
+        "put the pencil on to the white desk"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put two bowls on a table.",
+      "high_level_steps": [
+        "Go left to the small black table.",
+        "Pick the bowl up from the table.",
+        "Go forward and then left to the table with two computers.",
+        "Put the bowl down on the table.",
+        "Go right and then left to stand at the kitchen table.",
+        "Pick the bowl up from the table.",
+        "Go forward and then to the left to stand in front of the table with the two computers.",
+        "Put the bowl down to the right of the other bowl on the table."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Look at a pitcher by the light of a lamp.",
+      "high_level_steps": [
+        "Turn around and walk to the left side of the fireplace.",
+        "Pick up the pitcher on the floor.",
+        "Turn around and walk straight to the circular table.",
+        "Turn on the lamp."
+      ]
+    },
+    {
+      "split": "valid_seen",
+      "goal": "Set a chilled bottle of wine on the table.",
+      "high_level_steps": [
+        "Go across the room to the table.",
+        "Pick up the wine bottle on the table.",
+        "Go across the room to the fridge.",
+        "Chill the wine in the fridge.",
+        "Turn right and go to the table on the left past the fridge.",
+        "Set the chilled wine down on the front right corner of the table."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Take the remote from the table, put it on the couch",
+      "high_level_steps": [
+        "Turn to the right",
+        "Take the remote from the table",
+        "Turn to the right, head to the couch",
+        "Put the remote on the couch"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put a washed slice of potato in the microwave.",
+      "high_level_steps": [
+        "Go straight, when the fridge is to the right turn left, go to the counter to the left of the oven.",
+        "Take the knife from the counter.",
+        "Turn right, go to the sink, turn right, go to the fridge.",
+        "Open the fridge, slice the potato on the lower shelf in between the mug and the apple.",
+        "Stay at the fridge.",
+        "Put the knife on the lower shelf in the fridge in front of the mug and potato.",
+        "Stay at the fridge.",
+        "Take a slice of potato from the fridge.",
+        "Turn around, go to the sink.",
+        "Wash the potato in the sink. Take the potato from the sink.",
+        "Turn right, go to the fridge, turn right, go to the wall, turn left to face the microwave.",
+        "Put the potato in the microwave."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put a mug with a pen in it on the night stand.",
+      "high_level_steps": [
+        "Turn left and take a step then turn right and walk to the box to your right then turn left and walk to the wall then turn left and walk to the night stand.",
+        "Pick up the pen that's near the alarm clock.",
+        "Turn around and walk past the bed then turn right and walk almost to the laptop then turn left and walk to the desk.",
+        "Put the pen in the mug in front of you.",
+        "Pick up the mug with the pen in it.",
+        "Turn right and walk to the wall then turn right and walk to the night stand.",
+        "Put the mug to the left of the pen."
+      ]
+    },
+    {
+      "split": "valid_seen",
+      "goal": "Place a spatula on the table.",
+      "high_level_steps": [
+        "Walk to your right to the side of the table where the other loaf of bread is sitting.",
+        "Grab the spatula behind the lettuce on the table.",
+        "Take the spatula to the sink to your right.",
+        "Place the spatula in the sink, wash it and remove it from the sink.",
+        "Turn around and walk to the end of the table to your right.",
+        "Place the spatula standing next to the lettuce to the left of the bread."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "place blue dispenser in cabinet",
+      "high_level_steps": [
+        "go forward to white dresser with black rag",
+        "pick up blue dispenser to the left of black rag on dresser",
+        "turn left, go to far left cabinet below left sink",
+        "open far left cabinet, place blue dispenser in cabinet, close cabinet"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Place one full toilet paper roll and one empty toilet paper roll in the bathroom vanity.",
+      "high_level_steps": [
+        "Turn to the right, move past the door, then turn to the right and move and face the toilet.",
+        "Pick up the roll of toilet paper from the top of the toilet cistern to the right of the purple spray bottle.",
+        "Turn right, move to the vanity, then turn left, back up, and face the vanity.",
+        "Open the vanity drawer, place the toilet paper roll in the drawer, then close the vanity drawer.",
+        "Turn left, move past the white door, then turn right and move to the tiled area between the window and the toilet.",
+        "Pick up the empty toilet paper roll from the floor in front of the toilet brush.",
+        "Turn around, move towards the shower stall, then turn to the left and face the vanity.",
+        "Open the vanity drawer, place the empty toilet paper roll to the left of the toilet paper roll in the drawer, then close the drawer."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Pick up a box and turn a lamp on.",
+      "high_level_steps": [
+        "Turn to the right and face the open box.",
+        "Pick the box up from the cabinet.",
+        "Go left and then left again to face the lamp in the corner.",
+        "Turn the lamp on."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put a heated plate on the table.",
+      "high_level_steps": [
+        "move to the sink to the right of the stove",
+        "pick up a place from the sink",
+        "move to the stove to the left of you",
+        "heat the plate in the microwave",
+        "move to the table to the right past the fridge",
+        "put the plate on the table"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "put a clock on a desk",
+      "high_level_steps": [
+        "walk to face the night stand on the right of the bed",
+        "pick up the clock from the night stand",
+        "walk to the desk at the foot of the bed",
+        "put the clock on the desk"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put the credit card from the table to  the book shelf",
+      "high_level_steps": [
+        "Turn left then head to the table beside the desk",
+        "Pick up the credit card on the table beside the lamp",
+        "Turn right then head to the book shelf above the desk on your right",
+        "Put the credit card on the book shelf"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Place a chilled slice of tomato into a bin.",
+      "high_level_steps": [
+        "Turn left, move to the counter left of the refrigerator.",
+        "Pick up the knife on the counter.",
+        "Turn right and move to the bin at the end of the counter.",
+        "Slice the tomato in the bin.",
+        "Put the knife in the bin.",
+        "Pick up a slice of tomato from the bin.",
+        "Turn right, move to in front of the refrigerator.",
+        "Put the tomato slice in the refrigerator, chill it, pick it back up.",
+        "Turn right and move to the bin at the end of the counter.",
+        "Put the tomato slice in the bin."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Place a hot potato on the counter.",
+      "high_level_steps": [
+        "Turn around and face the toaster to your right.",
+        "Take the potato off of the counter in front of you.",
+        "Turn around and face the microwave on top of the stove on your right.",
+        "Heat up the potato in the microwave in front of you and take it out.",
+        "Turn right then face the counter on your left.",
+        "Place the potato on the counter."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "To see the racket in the light.",
+      "high_level_steps": [
+        "Walk forward to the tennis racket on the floor.",
+        "Pick up the tennis racket from beside the plant.",
+        "Turn around and walk across the room, then turn right and walk across the room to the desk.",
+        "Turn on the lamp on the left side of the desk."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Place a cup with a fork in it in a sink.",
+      "high_level_steps": [
+        "Turn right and then right again to the white table on the left wall.",
+        "Pick up the fork on the table.",
+        "Put the fork in the  yellow cup.",
+        "Pick up the cup.",
+        "Turn right and walk to the sink.",
+        "Place the cup in the sink to the right of the drain."
+      ]
+    },
+    {
+      "split": "valid_unseen",
+      "goal": "To wash a slice of lettuce and place it in the trash can.",
+      "high_level_steps": [
+        "Turn left and walk forward to face the counter to the right of the fridge.",
+        "Pick up the knife on the counter.",
+        "Look down to face the lettuce on the counter.",
+        "Cut the lettuce on the counter into slices.",
+        "Turn around and step forward to face the sink.",
+        "Place the knife in the sink.",
+        "Turn around and step forward to face the lettuce on the counter.",
+        "Pick up the slice of lettuce on the counter.",
+        "Turn around and step forward to face the sink.",
+        "Wash the lettuce slice in the sink and then remove it.",
+        "Walk around the right side of the center table to face the trash can.",
+        "Place the lettuce slice in the trash can."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put the keys on top drawer",
+      "high_level_steps": [
+        "Turn right then walk forward head to the side table on the right side of the bed",
+        "Pick up the keys on the side table",
+        "Turn right move forward then head to the drawer in front of the bed",
+        "Put the keys on top of the drawer",
+        "Turn left cross the room head to the left side of bed side table",
+        "Pick up the keys on the side table",
+        "Turn right head to the drawer on your right",
+        "Put the keys on top drawer beside the first keys"
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Examine a tennis racket by the light of a lamp.",
+      "high_level_steps": [
+        "Walk straight then hang left and proceed to the edge of the desk with the laptop on it.",
+        "Retrieve the tennis racket that is leaning up against the desk.",
+        "Turn left and head in the direction of the bed, then hang left and walk to the night stand with the alarm clock and lamp on it.",
+        "Turn on the lamp."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Place a chilled pan in a sink.",
+      "high_level_steps": [
+        "Turn right and walk to the edge of the counter on the left.",
+        "Pick up the silver pan on the corner of the counter.",
+        "Turn right and walk to the white fridge ahead.",
+        "Put the pan on the top shelf inside the fridge, chill it, remove it and close the door.",
+        "Turn left and walk to the sink on the right.",
+        "Put the chilled pan inside the sink to the right side."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Place the two keys at the lower level of the desk.",
+      "high_level_steps": [
+        "Walk straight towards the desk.",
+        "Pick up the set of keys on the right side.",
+        "Look down at where the laptop is at.",
+        "Place the set of keys to the right of the laptop.",
+        "Take a step to the left to find a set of keys to the right of the lamp.",
+        "Pick up the set of keys from the desk.",
+        "Take a step to the right to find other laptop.",
+        "Place the set of keys in front of the book beside the lap top."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "To move two glass to the second shelf from the top of the shelves.",
+      "high_level_steps": [
+        "Walk across the room and face the counter to the left of the stove.",
+        "Pick up the cup on the counter.",
+        "Step to the left and face the shelves on the wall.",
+        "Place the cup in the middle on the second shelf from the top.",
+        "Turn right and walk across the room, then turn right and walk to the end of the counter and turn left to face the counter.",
+        "Pick up the glass on the end of the counter.",
+        "Turn left and walk across the room, then turn left and walk across the room and turn right to face the shelves.",
+        "Place the glass on the right of the first glass."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "examine a plate with the lamp",
+      "high_level_steps": [
+        "walk forward to arm chair, turn right, walk forward past coffee table, turn left, turn right, walk to TV stand",
+        "pick up the plate that is on bottom shelf of TV stand",
+        "walk over to the lamp in the corner to the right of the TV stand, hold plate up",
+        "turn the lamp on"
+      ]
+    },
+    {
+      "split": "valid_seen",
+      "goal": "Examine a statue by the light of a small lamp.",
+      "high_level_steps": [
+        "Hang a right at the round table, turn left at the wall and walk to the wooden table by the window.",
+        "Pick up the tall statue at the back right corner of the table.",
+        "Turn around and walk to the small table next to the couch.",
+        "Turn on the small lamp on the table."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Put the keys on the middle chair. ",
+      "high_level_steps": [
+        "Move to the red couch.",
+        "Pick up the keys from the couch.",
+        "Bring the keys to the chairs in the corner.",
+        "Put the keys on the middle chair."
+      ]
+    },
+    {
+      "split": "train",
+      "goal": "Wash the soap that you found in the cabinet and place it back in the cabinet",
+      "high_level_steps": [
+        "Turn right and walk towards the sink. Face the sink",
+        "Open the left cabinet below the sink. Pick up the soap inside the cabinet",
+        "Place the soap in the sink, turn on the faucet to fill the sink with water, turn off the faucet, and pick up the soap again",
+        "Step back while facing the sink",
+        "Place the soap back in the cabinet where you found it and close the door"
+      ]
+    }
+  ]
+}

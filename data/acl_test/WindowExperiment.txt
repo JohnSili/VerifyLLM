@@ -1,0 +1,2033 @@
+Testing sequence: Grab things
+==================================================
+Original sequence:
+1. Turn to bed
+2. Turn to bed
+3. Look at bed
+4. Touch bed
+5. Walk to bedroom
+6. Turn to bed
+7. Look at bed
+8. Touch bed
+9. Walk to bedroom
+10. Turn to bed
+Testing window configuration: look_back=1, look_forward=1
+Analyzing action 1/10: Turn to bed
+╭──────────── Analysis Window 1/10 ────────────╮
+│ Window Range: 0 to 2
+│ Previous actions: []
+│ Current action: Turn to bed
+│ Next actions: ['Turn to bed']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 1/10 
+──────────────────────────────────────────────╮
+│ Action: Turn to bed
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: augment
+│ Details: The 'Turn to bed' action should be kept but moved after new actions are added to identify and grab the 
+needed things. This will ensure things are grabbed before turning to the bed.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 2/10: Turn to bed
+╭──────────── Analysis Window 2/10 ────────────╮
+│ Window Range: 0 to 3
+│ Previous actions: ['Turn to bed']
+│ Current action: Turn to bed
+│ Next actions: ['Look at bed']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 2/10 
+──────────────────────────────────────────────╮
+│ Action: Turn to bed
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: augment
+│ Details: The action sequence should be changed to remove the redundant 'Turn to bed' and ensure 'Turn to bed' 
+occurs before 'Look at bed'. No additional actions are needed.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 3/10: Look at bed
+╭──────────── Analysis Window 3/10 ────────────╮
+│ Window Range: 1 to 4
+│ Previous actions: ['Turn to bed']
+│ Current action: Look at bed
+│ Next actions: ['Touch bed']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 3/10 
+──────────────────────────────────────────────╮
+│ Action: Look at bed
+│ Position optimal: True
+│ Action necessary: True
+│ Decision: keep
+│ Details: The current action 'Look at bed' is an observation action that contributes to the task goal of grabbing 
+things. It is in the optimal position and has no redundancy or missing dependencies. Therefore, no changes are 
+needed.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 4/10: Touch bed
+╭──────────── Analysis Window 4/10 ────────────╮
+│ Window Range: 2 to 5
+│ Previous actions: ['Look at bed']
+│ Current action: Touch bed
+│ Next actions: ['Walk to bedroom']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 4/10 
+──────────────────────────────────────────────╮
+│ Action: Touch bed
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: augment
+│ Details: The 'Touch bed' action should be moved after 'Walk to bedroom' and augmented with a 'Pick up objects 
+from bed' action to fulfill the 'Grab things' task.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 5/10: Walk to bedroom
+╭──────────── Analysis Window 5/10 ────────────╮
+│ Window Range: 3 to 6
+│ Previous actions: ['Touch bed']
+│ Current action: Walk to bedroom
+│ Next actions: ['Turn to bed']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 5/10 
+──────────────────────────────────────────────╮
+│ Action: Walk to bedroom
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: move
+│ Details: The 'Walk to bedroom' action should be moved to the beginning of the sequence, before the 'Touch bed' 
+action, for logical consistency. One must walk to the bedroom before being able to touch the bed.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 6/10: Turn to bed
+╭──────────── Analysis Window 6/10 ────────────╮
+│ Window Range: 4 to 7
+│ Previous actions: ['Walk to bedroom']
+│ Current action: Turn to bed
+│ Next actions: ['Look at bed']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 6/10 
+──────────────────────────────────────────────╮
+│ Action: Turn to bed
+│ Position optimal: True
+│ Action necessary: True
+│ Decision: keep
+│ Details: The current action of turning to the bed is in the optimal position, is a necessary preparatory action, 
+and has no redundancy or missing dependencies. It should be kept as is.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 7/10: Look at bed
+╭──────────── Analysis Window 7/10 ────────────╮
+│ Window Range: 5 to 8
+│ Previous actions: ['Turn to bed']
+│ Current action: Look at bed
+│ Next actions: ['Touch bed']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 7/10 
+──────────────────────────────────────────────╮
+│ Action: Look at bed
+│ Position optimal: True
+│ Action necessary: True
+│ Decision: keep
+│ Details: The current action of 'Look at bed' is in the optimal position and is a necessary step in the sequence 
+of grabbing things from the bed. It contributes to the overall task goal and has no redundancy or missing actions 
+in the local context.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 8/10: Touch bed
+╭──────────── Analysis Window 8/10 ────────────╮
+│ Window Range: 6 to 9
+│ Previous actions: ['Look at bed']
+│ Current action: Touch bed
+│ Next actions: ['Walk to bedroom']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 8/10 
+──────────────────────────────────────────────╮
+│ Action: Touch bed
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: augment
+│ Details: The 'Touch bed' action should be moved after 'Walk to bedroom' and augmented with a 'Pick up objects 
+from bed' action to fulfill the 'Grab things' task.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 9/10: Walk to bedroom
+╭──────────── Analysis Window 9/10 ────────────╮
+│ Window Range: 7 to 10
+│ Previous actions: ['Touch bed']
+│ Current action: Walk to bedroom
+│ Next actions: ['Turn to bed']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 9/10 
+──────────────────────────────────────────────╮
+│ Action: Walk to bedroom
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: move
+│ Details: The 'Walk to bedroom' action should be moved before the 'Touch bed' action for optimal sequencing, as 
+you need to walk to the bedroom before being able to touch the bed in the bedroom.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 10/10: Turn to bed
+╭──────────── Analysis Window 10/10 ────────────╮
+│ Window Range: 8 to 10
+│ Previous actions: ['Walk to bedroom']
+│ Current action: Turn to bed
+│ Next actions: []
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 10/10 
+──────────────────────────────────────────────╮
+│ Action: Turn to bed
+│ Position optimal: True
+│ Action necessary: True
+│ Decision: augment
+│ Details: The 'Turn to bed' action is in the optimal position and is necessary. However, an additional action to 
+locate the objects to grab should be added after it.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Detailed Analysis for Grab things (look_back=1, look_forward=1):
+Reduction Percentage: -50.00%
+Sequence Similarity: 10.00%
+Sequence Comparison:
+Original:
+1. Turn to bed
+2. Turn to bed
+3. Look at bed
+4. Touch bed
+5. Walk to bedroom
+6. Turn to bed
+7. Look at bed
+8. Touch bed
+9. Walk to bedroom
+10. Turn to bed
+Optimized:
+1. Grab the things
+2. Identify things to grab
+3. Turn to bed
+4. Pick up objects from bed
+5. Turn to bed
+6. Look at bed
+7. Touch bed
+8. Pick up objects from bed
+9. Walk to bedroom
+10. {'position': 2, 'action': 'Locate objects to grab on/near bed'}
+11. Turn to bed
+12. Look at bed
+13. Touch bed
+14. Walk to bedroom
+15. Turn to bed
+Testing window configuration: look_back=2, look_forward=2
+Analyzing action 1/10: Turn to bed
+╭──────────── Analysis Window 1/10 ────────────╮
+│ Window Range: 0 to 3
+│ Previous actions: []
+│ Current action: Turn to bed
+│ Next actions: ['Turn to bed', 'Look at bed']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 1/10 
+──────────────────────────────────────────────╮
+│ Action: Turn to bed
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: remove
+│ Details: The second 'Turn to bed' action should be removed since it is redundant. The first one is sufficient for
+orienting towards the bed before looking at it.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 2/10: Turn to bed
+╭──────────── Analysis Window 2/10 ────────────╮
+│ Window Range: 0 to 4
+│ Previous actions: ['Turn to bed']
+│ Current action: Turn to bed
+│ Next actions: ['Look at bed', 'Touch bed']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 2/10 
+──────────────────────────────────────────────╮
+│ Action: Turn to bed
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: augment
+│ Details: The 'Turn to bed' action should be kept since it is necessary, but one instance should be removed due to
+redundancy. It should also be moved to the start of the sequence before observing or touching the bed.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 3/10: Look at bed
+╭──────────── Analysis Window 3/10 ────────────╮
+│ Window Range: 0 to 5
+│ Previous actions: ['Turn to bed', 'Turn to bed']
+│ Current action: Look at bed
+│ Next actions: ['Touch bed', 'Walk to bedroom']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 3/10 
+──────────────────────────────────────────────╮
+│ Action: Look at bed
+│ Position optimal: True
+│ Action necessary: True
+│ Decision: keep
+│ Details: The current action 'Look at bed' should be kept as is. Its position in the sequence is optimal, it is a 
+necessary observational action that contributes to the overall task goal, and no additional actions are needed.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 4/10: Touch bed
+╭──────────── Analysis Window 4/10 ────────────╮
+│ Window Range: 1 to 6
+│ Previous actions: ['Turn to bed', 'Look at bed']
+│ Current action: Touch bed
+│ Next actions: ['Walk to bedroom', 'Turn to bed']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 4/10 
+──────────────────────────────────────────────╮
+│ Action: Touch bed
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: move
+│ Details: The 'Touch bed' action should be moved after the 'Walk to bedroom' action for a more logical sequence. 
+Turning to look at the bed before touching it is reasonable.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 5/10: Walk to bedroom
+╭──────────── Analysis Window 5/10 ────────────╮
+│ Window Range: 2 to 7
+│ Previous actions: ['Look at bed', 'Touch bed']
+│ Current action: Walk to bedroom
+│ Next actions: ['Turn to bed', 'Look at bed']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 5/10 
+──────────────────────────────────────────────╮
+│ Action: Walk to bedroom
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: move
+│ Details: The 'Walk to bedroom' action should be moved to the beginning of the sequence, before looking at or 
+touching the bed. This ensures a logical order of moving to the bedroom first, then observing and interacting with 
+the bed.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 6/10: Turn to bed
+╭──────────── Analysis Window 6/10 ────────────╮
+│ Window Range: 3 to 8
+│ Previous actions: ['Touch bed', 'Walk to bedroom']
+│ Current action: Turn to bed
+│ Next actions: ['Look at bed', 'Touch bed']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 6/10 
+──────────────────────────────────────────────╮
+│ Action: Turn to bed
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: move
+│ Details: The 'Turn to bed' action should be moved to the position immediately after the 'Walk to bedroom' action 
+for optimal logical flow. No other changes are needed.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 7/10: Look at bed
+╭──────────── Analysis Window 7/10 ────────────╮
+│ Window Range: 4 to 9
+│ Previous actions: ['Walk to bedroom', 'Turn to bed']
+│ Current action: Look at bed
+│ Next actions: ['Touch bed', 'Walk to bedroom']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 7/10 
+──────────────────────────────────────────────╮
+│ Action: Look at bed
+│ Position optimal: True
+│ Action necessary: True
+│ Decision: keep
+│ Details: The current action 'Look at bed' should be kept in its current position as it is a necessary observation
+action that contributes to the task goal and has its dependencies satisfied by the preceding actions. There are no 
+redundant or missing actions in the local context.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 8/10: Touch bed
+╭──────────── Analysis Window 8/10 ────────────╮
+│ Window Range: 5 to 10
+│ Previous actions: ['Turn to bed', 'Look at bed']
+│ Current action: Touch bed
+│ Next actions: ['Walk to bedroom', 'Turn to bed']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 8/10 
+──────────────────────────────────────────────╮
+│ Action: Touch bed
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: move
+│ Details: The 'Touch bed' action should be moved after the 'Walk to bedroom' action to ensure the agent is in the 
+correct location before attempting to touch the bed. No other changes are necessary.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 9/10: Walk to bedroom
+╭──────────── Analysis Window 9/10 ────────────╮
+│ Window Range: 6 to 10
+│ Previous actions: ['Look at bed', 'Touch bed']
+│ Current action: Walk to bedroom
+│ Next actions: ['Turn to bed']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 9/10 
+──────────────────────────────────────────────╮
+│ Action: Walk to bedroom
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: move
+│ Details: The 'Walk to bedroom' action should be moved to the beginning of this sequence, before 'Look at bed'. 
+This will put the actions in a more logical order of entering the room, observing the bed, touching the bed, then 
+turning to the bed.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 10/10: Turn to bed
+╭──────────── Analysis Window 10/10 ────────────╮
+│ Window Range: 7 to 10
+│ Previous actions: ['Touch bed', 'Walk to bedroom']
+│ Current action: Turn to bed
+│ Next actions: []
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 10/10 
+──────────────────────────────────────────────╮
+│ Action: Turn to bed
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: augment
+│ Details: The action sequence should be augmented by moving 'Turn to bed' after 'Walk to bedroom', removing 'Touch
+bed', and adding actions to identify, reach for, and grasp the target objects.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Detailed Analysis for Grab things (look_back=2, look_forward=2):
+Reduction Percentage: -20.00%
+Sequence Similarity: 10.00%
+Sequence Comparison:
+Original:
+1. Turn to bed
+2. Turn to bed
+3. Look at bed
+4. Touch bed
+5. Walk to bedroom
+6. Turn to bed
+7. Look at bed
+8. Touch bed
+9. Walk to bedroom
+10. Turn to bed
+Optimized:
+1. Turn to bed
+2. Look at bed
+3. Touch bed
+4. Walk to bedroom
+5. Turn to bed
+6. Look at bed
+7. Touch bed
+8. Walk to bedroom
+9. Turn to bed
+10. Grasp object
+11. Reach for object
+12. Identify object to grab
+Testing window configuration: look_back=3, look_forward=3
+Analyzing action 1/10: Turn to bed
+╭──────────── Analysis Window 1/10 ────────────╮
+│ Window Range: 0 to 4
+│ Previous actions: []
+│ Current action: Turn to bed
+│ Next actions: ['Turn to bed', 'Look at bed', 'Touch bed']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 1/10 
+──────────────────────────────────────────────╮
+│ Action: Turn to bed
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: augment
+│ Details: The 'Turn to bed' action should be moved before 'Look at bed' and the duplicate 'Turn to bed' action 
+should be removed.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 2/10: Turn to bed
+╭──────────── Analysis Window 2/10 ────────────╮
+│ Window Range: 0 to 5
+│ Previous actions: ['Turn to bed']
+│ Current action: Turn to bed
+│ Next actions: ['Look at bed', 'Touch bed', 'Walk to bedroom']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 2/10 
+──────────────────────────────────────────────╮
+│ Action: Turn to bed
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: augment
+│ Details: The 'Turn to bed' action should be kept since it is necessary, but one instance should be removed due to
+redundancy. It should also be moved to the beginning of the sequence before observing or touching the bed.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 3/10: Look at bed
+╭──────────── Analysis Window 3/10 ────────────╮
+│ Window Range: 0 to 6
+│ Previous actions: ['Turn to bed', 'Turn to bed']
+│ Current action: Look at bed
+│ Next actions: ['Touch bed', 'Walk to bedroom', 'Turn to bed']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 3/10 
+──────────────────────────────────────────────╮
+│ Action: Look at bed
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: move
+│ Details: The 'Look at bed' action should be moved after the first 'Turn to bed' action for a more logical 
+sequence. The duplicate 'Turn to bed' actions should be removed as they are redundant.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 4/10: Touch bed
+╭──────────── Analysis Window 4/10 ────────────╮
+│ Window Range: 0 to 7
+│ Previous actions: ['Turn to bed', 'Turn to bed', 'Look at bed']
+│ Current action: Touch bed
+│ Next actions: ['Walk to bedroom', 'Turn to bed', 'Look at bed']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 4/10 
+──────────────────────────────────────────────╮
+│ Action: Touch bed
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: move
+│ Details: The 'Touch bed' action should be moved after the 'Walk to bedroom' action to ensure the agent is near 
+the bed before attempting to touch it. The surrounding 'Turn to bed' and 'Look at bed' actions are redundant and 
+can be removed.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 5/10: Walk to bedroom
+╭──────────── Analysis Window 5/10 ────────────╮
+│ Window Range: 1 to 8
+│ Previous actions: ['Turn to bed', 'Look at bed', 'Touch bed']
+│ Current action: Walk to bedroom
+│ Next actions: ['Turn to bed', 'Look at bed', 'Touch bed']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 5/10 
+──────────────────────────────────────────────╮
+│ Action: Walk to bedroom
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: move
+│ Details: The 'Walk to bedroom' action should be moved to the beginning of the sequence, before the 'Turn to bed' 
+action. This ensures a logical order of actions where one enters the bedroom first before interacting with objects 
+in the room.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 6/10: Turn to bed
+╭──────────── Analysis Window 6/10 ────────────╮
+│ Window Range: 2 to 9
+│ Previous actions: ['Look at bed', 'Touch bed', 'Walk to bedroom']
+│ Current action: Turn to bed
+│ Next actions: ['Look at bed', 'Touch bed', 'Walk to bedroom']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 6/10 
+──────────────────────────────────────────────╮
+│ Action: Turn to bed
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: move
+│ Details: The 'Turn to bed' action should be moved to after the 'Walk to bedroom' action for a more logical 
+sequence. The other actions like looking at and touching the bed can then follow.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 7/10: Look at bed
+╭──────────── Analysis Window 7/10 ────────────╮
+│ Window Range: 3 to 10
+│ Previous actions: ['Touch bed', 'Walk to bedroom', 'Turn to bed']
+│ Current action: Look at bed
+│ Next actions: ['Touch bed', 'Walk to bedroom', 'Turn to bed']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 7/10 
+──────────────────────────────────────────────╮
+│ Action: Look at bed
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: move
+│ Details: The 'Look at bed' action should be moved to after the 'Turn to bed' action and before the 'Touch bed' 
+action for optimal sequencing.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 8/10: Touch bed
+╭──────────── Analysis Window 8/10 ────────────╮
+│ Window Range: 4 to 10
+│ Previous actions: ['Walk to bedroom', 'Turn to bed', 'Look at bed']
+│ Current action: Touch bed
+│ Next actions: ['Walk to bedroom', 'Turn to bed']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 8/10 
+──────────────────────────────────────────────╮
+│ Action: Touch bed
+│ Position optimal: True
+│ Action necessary: False
+│ Decision: remove
+│ Details: The 'Touch bed' action should be removed from the sequence as it is redundant and does not contribute to
+the task goal of grabbing things. The surrounding actions of walking to the bedroom, turning to the bed, and 
+looking at it are sufficient for the task.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 9/10: Walk to bedroom
+╭──────────── Analysis Window 9/10 ────────────╮
+│ Window Range: 5 to 10
+│ Previous actions: ['Turn to bed', 'Look at bed', 'Touch bed']
+│ Current action: Walk to bedroom
+│ Next actions: ['Turn to bed']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 9/10 
+──────────────────────────────────────────────╮
+│ Action: Walk to bedroom
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: move
+│ Details: The 'Walk to bedroom' action should be moved to the beginning of the sequence, before the agent turns 
+to, looks at, or touches the bed. This ensures a logical order of actions where the agent enters the bedroom first 
+before interacting with the bed.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 10/10: Turn to bed
+╭──────────── Analysis Window 10/10 ────────────╮
+│ Window Range: 6 to 10
+│ Previous actions: ['Look at bed', 'Touch bed', 'Walk to bedroom']
+│ Current action: Turn to bed
+│ Next actions: []
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 10/10 
+──────────────────────────────────────────────╮
+│ Action: Turn to bed
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: move
+│ Details: The 'Turn to bed' action should be moved to after the 'Walk to bedroom' action to ensure a logical 
+sequence of moving to the bedroom before orienting to the bed in the room. No other changes are needed.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Detailed Analysis for Grab things (look_back=3, look_forward=3):
+Reduction Percentage: 10.00%
+Sequence Similarity: 30.00%
+Sequence Comparison:
+Original:
+1. Turn to bed
+2. Turn to bed
+3. Look at bed
+4. Touch bed
+5. Walk to bedroom
+6. Turn to bed
+7. Look at bed
+8. Touch bed
+9. Walk to bedroom
+10. Turn to bed
+Optimized:
+1. Turn to bed
+2. Look at bed
+3. Touch bed
+4. Walk to bedroom
+5. Turn to bed
+6. Turn to bed
+7. Look at bed
+8. Walk to bedroom
+9. Turn to bed
+Testing sequence: Put away toys
+==================================================
+Original sequence:
+1. Walk to bedroom
+2. Walk to closet
+3. Put toy in closet
+4. Walk to cabinet
+5. Put toy in cabinet
+6. Walk to cabinet
+7. Put toy in cabinet
+8. Walk to closet
+9. Put toy in closet
+10. Walk to closet
+Testing window configuration: look_back=1, look_forward=1
+Analyzing action 1/10: Walk to bedroom
+╭──────────── Analysis Window 1/10 ────────────╮
+│ Window Range: 0 to 2
+│ Previous actions: []
+│ Current action: Walk to bedroom
+│ Next actions: ['Walk to closet']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 1/10 
+──────────────────────────────────────────────╮
+│ Action: Walk to bedroom
+│ Position optimal: True
+│ Action necessary: True
+│ Decision: keep
+│ Details: The current action of walking to the bedroom should be kept as is. It is in the optimal position as the 
+first step, it is a necessary action to eventually reach the closet, and no additional actions are needed at this 
+point.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 2/10: Walk to closet
+╭──────────── Analysis Window 2/10 ────────────╮
+│ Window Range: 0 to 3
+│ Previous actions: ['Walk to bedroom']
+│ Current action: Walk to closet
+│ Next actions: ['Put toy in closet']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 2/10 
+──────────────────────────────────────────────╮
+│ Action: Walk to closet
+│ Position optimal: True
+│ Action necessary: True
+│ Decision: keep
+│ Details: The current action is in the optimal position, is necessary for completing the task, and has no 
+redundancy or missing dependencies. Therefore, it should be kept as is.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 3/10: Put toy in closet
+╭──────────── Analysis Window 3/10 ────────────╮
+│ Window Range: 1 to 4
+│ Previous actions: ['Walk to closet']
+│ Current action: Put toy in closet
+│ Next actions: ['Walk to cabinet']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 3/10 
+──────────────────────────────────────────────╮
+│ Action: Put toy in closet
+│ Position optimal: True
+│ Action necessary: True
+│ Decision: augment
+│ Details: The current action is necessary and in the correct position. However, the sequence should be augmented 
+by adding the 'Pick up toy' action before putting the toy in the closet.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 4/10: Walk to cabinet
+╭──────────── Analysis Window 4/10 ────────────╮
+│ Window Range: 2 to 5
+│ Previous actions: ['Put toy in closet']
+│ Current action: Walk to cabinet
+│ Next actions: ['Put toy in cabinet']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 4/10 
+──────────────────────────────────────────────╮
+│ Action: Walk to cabinet
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: move
+│ Details: The 'Walk to cabinet' action should be moved to the beginning of the sequence, before 'Put toy in 
+closet'. This ensures a logical order of actions: walking to the cabinet first, then putting the toy in the 
+cabinet.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 5/10: Put toy in cabinet
+╭──────────── Analysis Window 5/10 ────────────╮
+│ Window Range: 3 to 6
+│ Previous actions: ['Walk to cabinet']
+│ Current action: Put toy in cabinet
+│ Next actions: ['Walk to cabinet']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 5/10 
+──────────────────────────────────────────────╮
+│ Action: Put toy in cabinet
+│ Position optimal: True
+│ Action necessary: True
+│ Decision: augment
+│ Details: The current action is necessary and in the correct position. However, the action 'Pick up toy' should be
+added before 'Put toy in cabinet' to ensure the sequence is complete and logical.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 6/10: Walk to cabinet
+╭──────────── Analysis Window 6/10 ────────────╮
+│ Window Range: 4 to 7
+│ Previous actions: ['Put toy in cabinet']
+│ Current action: Walk to cabinet
+│ Next actions: ['Put toy in cabinet']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 6/10 
+──────────────────────────────────────────────╮
+│ Action: Walk to cabinet
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: move
+│ Details: The 'Walk to cabinet' action should be moved to the beginning of this sequence, before the 'Put toy in 
+cabinet' actions. This will ensure the agent is at the right location to put the toys away.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 7/10: Put toy in cabinet
+╭──────────── Analysis Window 7/10 ────────────╮
+│ Window Range: 5 to 8
+│ Previous actions: ['Walk to cabinet']
+│ Current action: Put toy in cabinet
+│ Next actions: ['Walk to closet']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 7/10 
+──────────────────────────────────────────────╮
+│ Action: Put toy in cabinet
+│ Position optimal: True
+│ Action necessary: True
+│ Decision: keep
+│ Details: The current action is in the optimal position and is necessary for completing the task. No changes are 
+needed.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 8/10: Walk to closet
+╭──────────── Analysis Window 8/10 ────────────╮
+│ Window Range: 6 to 9
+│ Previous actions: ['Put toy in cabinet']
+│ Current action: Walk to closet
+│ Next actions: ['Put toy in closet']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 8/10 
+──────────────────────────────────────────────╮
+│ Action: Walk to closet
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: move
+│ Details: The 'Walk to closet' action should be moved to the beginning of the sequence, before putting the toy in 
+the cabinet. This ensures a logical order of actions: moving to the appropriate location before interacting with 
+objects.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 9/10: Put toy in closet
+╭──────────── Analysis Window 9/10 ────────────╮
+│ Window Range: 7 to 10
+│ Previous actions: ['Walk to closet']
+│ Current action: Put toy in closet
+│ Next actions: ['Walk to closet']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 9/10 
+──────────────────────────────────────────────╮
+│ Action: Put toy in closet
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: augment
+│ Details: The current action should be kept but the sequence should be augmented. The redundant actions of walking
+to the closet twice should be removed. The missing action of picking up the toy should be added before putting it 
+in the closet.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 10/10: Walk to closet
+╭──────────── Analysis Window 10/10 ────────────╮
+│ Window Range: 8 to 10
+│ Previous actions: ['Put toy in closet']
+│ Current action: Walk to closet
+│ Next actions: []
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 10/10 
+──────────────────────────────────────────────╮
+│ Action: Walk to closet
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: move
+│ Details: The 'Walk to closet' action should be moved before the 'Put toy in closet' action to ensure the actor is
+at the closet before trying to put the toy inside.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Detailed Analysis for Put away toys (look_back=1, look_forward=1):
+Reduction Percentage: -30.00%
+Sequence Similarity: 40.00%
+Sequence Comparison:
+Original:
+1. Walk to bedroom
+2. Walk to closet
+3. Put toy in closet
+4. Walk to cabinet
+5. Put toy in cabinet
+6. Walk to cabinet
+7. Put toy in cabinet
+8. Walk to closet
+9. Put toy in closet
+10. Walk to closet
+Optimized:
+1. Walk to bedroom
+2. Walk to closet
+3. {'action': 'Pick up toy', 'position': 1}
+4. Put toy in closet
+5. {'action': 'Pick up toy', 'position': 'before current'}
+6. Walk to cabinet
+7. Put toy in cabinet
+8. Walk to cabinet
+9. Pick up toy
+10. Put toy in cabinet
+11. Walk to closet
+12. Put toy in closet
+13. Walk to closet
+Testing window configuration: look_back=2, look_forward=2
+Analyzing action 1/10: Walk to bedroom
+╭──────────── Analysis Window 1/10 ────────────╮
+│ Window Range: 0 to 3
+│ Previous actions: []
+│ Current action: Walk to bedroom
+│ Next actions: ['Walk to closet', 'Put toy in closet']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 1/10 
+──────────────────────────────────────────────╮
+│ Action: Walk to bedroom
+│ Position optimal: True
+│ Action necessary: True
+│ Decision: keep
+│ Details: The current action of walking to the bedroom should be kept as is. It is in the optimal position as the 
+first action, is a necessary step, and no additional actions are needed.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 2/10: Walk to closet
+╭──────────── Analysis Window 2/10 ────────────╮
+│ Window Range: 0 to 4
+│ Previous actions: ['Walk to bedroom']
+│ Current action: Walk to closet
+│ Next actions: ['Put toy in closet', 'Walk to cabinet']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 2/10 
+──────────────────────────────────────────────╮
+│ Action: Walk to closet
+│ Position optimal: True
+│ Action necessary: True
+│ Decision: keep
+│ Details: The current action 'Walk to closet' is in the optimal position and is a necessary step to complete the 
+task of putting away toys. It follows logically from the previous action and leads to the subsequent actions 
+without any redundancy or missing steps.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 3/10: Put toy in closet
+╭──────────── Analysis Window 3/10 ────────────╮
+│ Window Range: 0 to 5
+│ Previous actions: ['Walk to bedroom', 'Walk to closet']
+│ Current action: Put toy in closet
+│ Next actions: ['Walk to cabinet', 'Put toy in cabinet']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 3/10 
+──────────────────────────────────────────────╮
+│ Action: Put toy in closet
+│ Position optimal: True
+│ Action necessary: True
+│ Decision: augment
+│ Details: The current action is necessary and in the correct position. However, the action of picking up the toy 
+is missing and should be added before putting the toy in the closet.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 4/10: Walk to cabinet
+╭──────────── Analysis Window 4/10 ────────────╮
+│ Window Range: 1 to 6
+│ Previous actions: ['Walk to closet', 'Put toy in closet']
+│ Current action: Walk to cabinet
+│ Next actions: ['Put toy in cabinet', 'Walk to cabinet']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 4/10 
+──────────────────────────────────────────────╮
+│ Action: Walk to cabinet
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: move
+│ Details: The 'Walk to cabinet' action should be moved to after the 'Put toy in cabinet' action to optimize the 
+sequence and eliminate the redundant extra trip to the cabinet.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 5/10: Put toy in cabinet
+╭──────────── Analysis Window 5/10 ────────────╮
+│ Window Range: 2 to 7
+│ Previous actions: ['Put toy in closet', 'Walk to cabinet']
+│ Current action: Put toy in cabinet
+│ Next actions: ['Walk to cabinet', 'Put toy in cabinet']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 5/10 
+──────────────────────────────────────────────╮
+│ Action: Put toy in cabinet
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: augment
+│ Details: The Put toy in cabinet action should be kept since it is necessary for the task. However, the redundant 
+second occurrence should be removed. The action should also be moved to immediately follow the Walk to cabinet 
+action.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 6/10: Walk to cabinet
+╭──────────── Analysis Window 6/10 ────────────╮
+│ Window Range: 3 to 8
+│ Previous actions: ['Walk to cabinet', 'Put toy in cabinet']
+│ Current action: Walk to cabinet
+│ Next actions: ['Put toy in cabinet', 'Walk to closet']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 6/10 
+──────────────────────────────────────────────╮
+│ Action: Walk to cabinet
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: move
+│ Details: The 'Walk to cabinet' action should be moved to the position before the 'Put toy in cabinet' action to 
+maintain the logical sequence of actions. This will eliminate the redundant 'Walk to cabinet' action currently in 
+the sequence.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 7/10: Put toy in cabinet
+╭──────────── Analysis Window 7/10 ────────────╮
+│ Window Range: 4 to 9
+│ Previous actions: ['Put toy in cabinet', 'Walk to cabinet']
+│ Current action: Put toy in cabinet
+│ Next actions: ['Walk to closet', 'Put toy in closet']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 7/10 
+──────────────────────────────────────────────╮
+│ Action: Put toy in cabinet
+│ Position optimal: False
+│ Action necessary: False
+│ Decision: remove
+│ Details: The current 'Put toy in cabinet' action should be removed from the sequence because it is redundant and 
+inefficiently positioned. The remaining 'Put toy in cabinet' action should be moved to the position immediately 
+after 'Walk to cabinet'.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 8/10: Walk to closet
+╭──────────── Analysis Window 8/10 ────────────╮
+│ Window Range: 5 to 10
+│ Previous actions: ['Walk to cabinet', 'Put toy in cabinet']
+│ Current action: Walk to closet
+│ Next actions: ['Put toy in closet', 'Walk to closet']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 8/10 
+──────────────────────────────────────────────╮
+│ Action: Walk to closet
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: move
+│ Details: The 'Walk to closet' action should be moved to after the 'Put toy in closet' action to optimize the 
+sequence and eliminate the redundant closet trip.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 9/10: Put toy in closet
+╭──────────── Analysis Window 9/10 ────────────╮
+│ Window Range: 6 to 10
+│ Previous actions: ['Put toy in cabinet', 'Walk to closet']
+│ Current action: Put toy in closet
+│ Next actions: ['Walk to closet']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 9/10 
+──────────────────────────────────────────────╮
+│ Action: Put toy in closet
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: move
+│ Details: The 'Put toy in closet' action should be moved to the position immediately after the first 'Walk to 
+closet' action. This will eliminate the redundant 'Walk to closet' action and make the sequence more efficient.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 10/10: Walk to closet
+╭──────────── Analysis Window 10/10 ────────────╮
+│ Window Range: 7 to 10
+│ Previous actions: ['Walk to closet', 'Put toy in closet']
+│ Current action: Walk to closet
+│ Next actions: []
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 10/10 
+──────────────────────────────────────────────╮
+│ Action: Walk to closet
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: move
+│ Details: To optimize the action sequence, the 'Walk to closet' action should be moved to before the 'Put toy in 
+closet' action. This will eliminate the redundant back-and-forth to the closet.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Detailed Analysis for Put away toys (look_back=2, look_forward=2):
+Reduction Percentage: 0.00%
+Sequence Similarity: 50.00%
+Sequence Comparison:
+Original:
+1. Walk to bedroom
+2. Walk to closet
+3. Put toy in closet
+4. Walk to cabinet
+5. Put toy in cabinet
+6. Walk to cabinet
+7. Put toy in cabinet
+8. Walk to closet
+9. Put toy in closet
+10. Walk to closet
+Optimized:
+1. Walk to bedroom
+2. {'action': 'Pick up toy', 'position': 2}
+3. Put toy in closet
+4. Walk to closet
+5. Walk to cabinet
+6. Put toy in cabinet
+7. Walk to cabinet
+8. Walk to closet
+9. Put toy in closet
+10. Walk to closet
+Testing window configuration: look_back=3, look_forward=3
+Analyzing action 1/10: Walk to bedroom
+╭──────────── Analysis Window 1/10 ────────────╮
+│ Window Range: 0 to 4
+│ Previous actions: []
+│ Current action: Walk to bedroom
+│ Next actions: ['Walk to closet', 'Put toy in closet', 'Walk to cabinet']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 1/10 
+──────────────────────────────────────────────╮
+│ Action: Walk to bedroom
+│ Position optimal: True
+│ Action necessary: True
+│ Decision: augment
+│ Details: The current action of walking to the bedroom is necessary and in the optimal position. However, the 
+action of picking up the toy needs to be added before walking to the closet to complete the task.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 2/10: Walk to closet
+╭──────────── Analysis Window 2/10 ────────────╮
+│ Window Range: 0 to 5
+│ Previous actions: ['Walk to bedroom']
+│ Current action: Walk to closet
+│ Next actions: ['Put toy in closet', 'Walk to cabinet', 'Put toy in cabinet']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 2/10 
+──────────────────────────────────────────────╮
+│ Action: Walk to closet
+│ Position optimal: True
+│ Action necessary: True
+│ Decision: augment
+│ Details: The current action is necessary and in the optimal position. However, the action of picking up the toy 
+is missing and should be added before walking to the closet.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 3/10: Put toy in closet
+╭──────────── Analysis Window 3/10 ────────────╮
+│ Window Range: 0 to 6
+│ Previous actions: ['Walk to bedroom', 'Walk to closet']
+│ Current action: Put toy in closet
+│ Next actions: ['Walk to cabinet', 'Put toy in cabinet', 'Walk to cabinet']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 3/10 
+──────────────────────────────────────────────╮
+│ Action: Put toy in closet
+│ Position optimal: True
+│ Action necessary: True
+│ Decision: augment
+│ Details: The current action is in the correct position and is necessary. However, the 'Pick up toy' action needs 
+to be added before 'Put toy in closet' to make the sequence logically complete.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 4/10: Walk to cabinet
+╭──────────── Analysis Window 4/10 ────────────╮
+│ Window Range: 0 to 7
+│ Previous actions: ['Walk to bedroom', 'Walk to closet', 'Put toy in closet']
+│ Current action: Walk to cabinet
+│ Next actions: ['Put toy in cabinet', 'Walk to cabinet', 'Put toy in cabinet']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 4/10 
+──────────────────────────────────────────────╮
+│ Action: Walk to cabinet
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: augment
+│ Details: The current action should be moved after the 'Put toy in closet' action to improve logical flow. An 
+additional action to pick up a toy from the cabinet should be added before the second 'Put toy in cabinet' action.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 5/10: Put toy in cabinet
+╭──────────── Analysis Window 5/10 ────────────╮
+│ Window Range: 1 to 8
+│ Previous actions: ['Walk to closet', 'Put toy in closet', 'Walk to cabinet']
+│ Current action: Put toy in cabinet
+│ Next actions: ['Walk to cabinet', 'Put toy in cabinet', 'Walk to closet']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 5/10 
+──────────────────────────────────────────────╮
+│ Action: Put toy in cabinet
+│ Position optimal: True
+│ Action necessary: True
+│ Decision: keep
+│ Details: The current action of putting the toy in the cabinet is necessary, in the optimal position, and does not
+require adding or removing any actions in this context.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 6/10: Walk to cabinet
+╭──────────── Analysis Window 6/10 ────────────╮
+│ Window Range: 2 to 9
+│ Previous actions: ['Put toy in closet', 'Walk to cabinet', 'Put toy in cabinet']
+│ Current action: Walk to cabinet
+│ Next actions: ['Put toy in cabinet', 'Walk to closet', 'Put toy in closet']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 6/10 
+──────────────────────────────────────────────╮
+│ Action: Walk to cabinet
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: move
+│ Details: The Walk to cabinet action should be moved to the position right before the Put toy in cabinet action. 
+This will ensure the sequence follows a logical order of first moving to the cabinet location and then placing the 
+toy inside.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 7/10: Put toy in cabinet
+╭──────────── Analysis Window 7/10 ────────────╮
+│ Window Range: 3 to 10
+│ Previous actions: ['Walk to cabinet', 'Put toy in cabinet', 'Walk to cabinet']
+│ Current action: Put toy in cabinet
+│ Next actions: ['Walk to closet', 'Put toy in closet', 'Walk to closet']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 7/10 
+──────────────────────────────────────────────╮
+│ Action: Put toy in cabinet
+│ Position optimal: True
+│ Action necessary: True
+│ Decision: keep
+│ Details: The current action is in the optimal position, is necessary for achieving the goal, and has no 
+redundancy or missing dependencies. Therefore, no changes are needed.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 8/10: Walk to closet
+╭──────────── Analysis Window 8/10 ────────────╮
+│ Window Range: 4 to 10
+│ Previous actions: ['Put toy in cabinet', 'Walk to cabinet', 'Put toy in cabinet']
+│ Current action: Walk to closet
+│ Next actions: ['Put toy in closet', 'Walk to closet']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 8/10 
+──────────────────────────────────────────────╮
+│ Action: Walk to closet
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: move
+│ Details: The Walk to closet action should be moved to come before the Put toy in closet action. This will put the
+actions in the proper logical order of walking to the closet first, then putting the toy away once there.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 9/10: Put toy in closet
+╭──────────── Analysis Window 9/10 ────────────╮
+│ Window Range: 5 to 10
+│ Previous actions: ['Walk to cabinet', 'Put toy in cabinet', 'Walk to closet']
+│ Current action: Put toy in closet
+│ Next actions: ['Walk to closet']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 9/10 
+──────────────────────────────────────────────╮
+│ Action: Put toy in closet
+│ Position optimal: True
+│ Action necessary: True
+│ Decision: keep
+│ Details: The current action of putting the toy in the closet is in the optimal position, is necessary for 
+completing the task, and does not require any changes or additional actions.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 10/10: Walk to closet
+╭──────────── Analysis Window 10/10 ────────────╮
+│ Window Range: 6 to 10
+│ Previous actions: ['Put toy in cabinet', 'Walk to closet', 'Put toy in closet']
+│ Current action: Walk to closet
+│ Next actions: []
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 10/10 
+──────────────────────────────────────────────╮
+│ Action: Walk to closet
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: move
+│ Details: The Walk to closet action should be moved to before the Put toy in closet action, as that is a more 
+logical sequence. The duplicate Walk to closet action should then be removed as it is redundant.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Detailed Analysis for Put away toys (look_back=3, look_forward=3):
+Reduction Percentage: -40.00%
+Sequence Similarity: 0.00%
+Sequence Comparison:
+Original:
+1. Walk to bedroom
+2. Walk to closet
+3. Put toy in closet
+4. Walk to cabinet
+5. Put toy in cabinet
+6. Walk to cabinet
+7. Put toy in cabinet
+8. Walk to closet
+9. Put toy in closet
+10. Walk to closet
+Optimized:
+1. {'action': 'Pick up toy', 'position': 1}
+2. {'action': 'Pick up toy', 'position': 1}
+3. {'action': 'Pick up toy', 'position': 2}
+4. {'action': 'Pick up toy from cabinet', 'position': 5}
+5. Walk to bedroom
+6. Walk to closet
+7. Put toy in closet
+8. Walk to cabinet
+9. Put toy in cabinet
+10. Walk to cabinet
+11. Put toy in cabinet
+12. Walk to closet
+13. Put toy in closet
+14. Walk to closet
+Testing sequence: Draft home
+==================================================
+Original sequence:
+1. Run to home office
+2. Run to shoes
+3. Find shoes
+4. Find shoes
+5. Take off shoes
+6. Walk to desk
+7. Run to home office
+8. Run to shoes
+9. Find shoes
+10. Take off shoes
+Testing window configuration: look_back=1, look_forward=1
+Analyzing action 1/10: Run to home office
+╭──────────── Analysis Window 1/10 ────────────╮
+│ Window Range: 0 to 2
+│ Previous actions: []
+│ Current action: Run to home office
+│ Next actions: ['Run to shoes']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 1/10 
+──────────────────────────────────────────────╮
+│ Action: Run to home office
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: augment
+│ Details: The 'Run to home office' action should be moved after 'Run to shoes', and a 'Put on shoes' action should
+be added in between.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 2/10: Run to shoes
+╭──────────── Analysis Window 2/10 ────────────╮
+│ Window Range: 0 to 3
+│ Previous actions: ['Run to home office']
+│ Current action: Run to shoes
+│ Next actions: ['Find shoes']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 2/10 
+──────────────────────────────────────────────╮
+│ Action: Run to shoes
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: move
+│ Details: The 'Run to shoes' action should be moved after 'Run to home office' to optimize the path taken and 
+order of actions.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 3/10: Find shoes
+╭──────────── Analysis Window 3/10 ────────────╮
+│ Window Range: 1 to 4
+│ Previous actions: ['Run to shoes']
+│ Current action: Find shoes
+│ Next actions: ['Find shoes']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 3/10 
+──────────────────────────────────────────────╮
+│ Action: Find shoes
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: move
+│ Details: The 'Find shoes' action should be moved after the 'Run to shoes' action for a more logical sequence. The
+duplicate 'Find shoes' action should be removed as it is redundant.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 4/10: Find shoes
+╭──────────── Analysis Window 4/10 ────────────╮
+│ Window Range: 2 to 5
+│ Previous actions: ['Find shoes']
+│ Current action: Find shoes
+│ Next actions: ['Take off shoes']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 4/10 
+──────────────────────────────────────────────╮
+│ Action: Find shoes
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: augment
+│ Details: The action 'Find shoes' is necessary and in the correct position, but the action 'Put on shoes' is 
+missing and should be added between 'Find shoes' and 'Take off shoes' to make the sequence logically consistent.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 5/10: Take off shoes
+╭──────────── Analysis Window 5/10 ────────────╮
+│ Window Range: 3 to 6
+│ Previous actions: ['Find shoes']
+│ Current action: Take off shoes
+│ Next actions: ['Walk to desk']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 5/10 
+──────────────────────────────────────────────╮
+│ Action: Take off shoes
+│ Position optimal: False
+│ Action necessary: False
+│ Decision: remove
+│ Details: The 'Take off shoes' action should be removed from the sequence as it is not relevant or necessary for 
+the task of drafting at home. Finding shoes and walking to the desk are sufficient.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 6/10: Walk to desk
+╭──────────── Analysis Window 6/10 ────────────╮
+│ Window Range: 4 to 7
+│ Previous actions: ['Take off shoes']
+│ Current action: Walk to desk
+│ Next actions: ['Run to home office']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 6/10 
+──────────────────────────────────────────────╮
+│ Action: Walk to desk
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: move
+│ Details: The 'Walk to desk' action should be moved after 'Run to home office' to optimize the movement sequence 
+and avoid unnecessary back-and-forth.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 7/10: Run to home office
+╭──────────── Analysis Window 7/10 ────────────╮
+│ Window Range: 5 to 8
+│ Previous actions: ['Walk to desk']
+│ Current action: Run to home office
+│ Next actions: ['Run to shoes']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 7/10 
+──────────────────────────────────────────────╮
+│ Action: Run to home office
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: augment
+│ Details: The action 'Run to home office' should be moved after 'Walk to desk' to optimize the sequence. An 
+additional action to locate the shoes in the home office should also be added before running to the shoes.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 8/10: Run to shoes
+╭──────────── Analysis Window 8/10 ────────────╮
+│ Window Range: 6 to 9
+│ Previous actions: ['Run to home office']
+│ Current action: Run to shoes
+│ Next actions: ['Find shoes']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 8/10 
+──────────────────────────────────────────────╮
+│ Action: Run to shoes
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: augment
+│ Details: The 'Run to shoes' action should be moved to after 'Run to home office' to optimize the path. The action
+of 'Put on shoes' also needs to be added after 'Find shoes' to complete the sequence.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 9/10: Find shoes
+╭──────────── Analysis Window 9/10 ────────────╮
+│ Window Range: 7 to 10
+│ Previous actions: ['Run to shoes']
+│ Current action: Find shoes
+│ Next actions: ['Take off shoes']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 9/10 
+──────────────────────────────────────────────╮
+│ Action: Find shoes
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: move
+│ Details: The action 'Find shoes' should be moved to the second position, after 'Run to shoes', for optimal 
+logical flow. No other changes are needed.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 10/10: Take off shoes
+╭──────────── Analysis Window 10/10 ────────────╮
+│ Window Range: 8 to 10
+│ Previous actions: ['Find shoes']
+│ Current action: Take off shoes
+│ Next actions: []
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 10/10 
+──────────────────────────────────────────────╮
+│ Action: Take off shoes
+│ Position optimal: False
+│ Action necessary: False
+│ Decision: remove
+│ Details: The Take off shoes action should be removed from the sequence as it is redundant and inconsistent with 
+the task of drafting at home. Finding and taking off shoes are unrelated to drafting.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Detailed Analysis for Draft home (look_back=1, look_forward=1):
+Reduction Percentage: -20.00%
+Sequence Similarity: 10.00%
+Sequence Comparison:
+Original:
+1. Run to home office
+2. Run to shoes
+3. Find shoes
+4. Find shoes
+5. Take off shoes
+6. Walk to desk
+7. Run to home office
+8. Run to shoes
+9. Find shoes
+10. Take off shoes
+Optimized:
+1. Put on shoes
+2. Run to home office
+3. Find shoes
+4. Run to shoes
+5. {'action': 'Put on shoes', 'position': 2}
+6. Find shoes
+7. Locate shoes in home office
+8. Put on shoes
+9. Walk to desk
+10. Run to home office
+11. Run to shoes
+12. Find shoes
+Testing window configuration: look_back=2, look_forward=2
+Analyzing action 1/10: Run to home office
+╭──────────── Analysis Window 1/10 ────────────╮
+│ Window Range: 0 to 3
+│ Previous actions: []
+│ Current action: Run to home office
+│ Next actions: ['Run to shoes', 'Find shoes']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 1/10 
+──────────────────────────────────────────────╮
+│ Action: Run to home office
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: move
+│ Details: The 'Run to home office' action should be moved to the end of the sequence, after 'Find shoes' and the 
+added 'Put on shoes' actions. This optimizes the sequence by getting fully ready before moving to the home office.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 2/10: Run to shoes
+╭──────────── Analysis Window 2/10 ────────────╮
+│ Window Range: 0 to 4
+│ Previous actions: ['Run to home office']
+│ Current action: Run to shoes
+│ Next actions: ['Find shoes', 'Find shoes']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 2/10 
+──────────────────────────────────────────────╮
+│ Action: Run to shoes
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: augment
+│ Details: The action 'Run to shoes' should be moved after 'Run to home office', the redundant 'Find shoes' action 
+should be removed, and 'Put on shoes' should be added after finding the shoes.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 3/10: Find shoes
+╭──────────── Analysis Window 3/10 ────────────╮
+│ Window Range: 0 to 5
+│ Previous actions: ['Run to home office', 'Run to shoes']
+│ Current action: Find shoes
+│ Next actions: ['Find shoes', 'Take off shoes']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 3/10 
+──────────────────────────────────────────────╮
+│ Action: Find shoes
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: augment
+│ Details: The 'Find shoes' action should be moved after 'Run to shoes' and the duplicate 'Find shoes' action 
+should be removed to optimize the sequence.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 4/10: Find shoes
+╭──────────── Analysis Window 4/10 ────────────╮
+│ Window Range: 1 to 6
+│ Previous actions: ['Run to shoes', 'Find shoes']
+│ Current action: Find shoes
+│ Next actions: ['Take off shoes', 'Walk to desk']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 4/10 
+──────────────────────────────────────────────╮
+│ Action: Find shoes
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: augment
+│ Details: The Find shoes action should be moved to the start of the sequence, the duplicate should be removed, and
+a Put on shoes action should be added before walking to the desk.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 5/10: Take off shoes
+╭──────────── Analysis Window 5/10 ────────────╮
+│ Window Range: 2 to 7
+│ Previous actions: ['Find shoes', 'Find shoes']
+│ Current action: Take off shoes
+│ Next actions: ['Walk to desk', 'Run to home office']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 5/10 
+──────────────────────────────────────────────╮
+│ Action: Take off shoes
+│ Position optimal: False
+│ Action necessary: False
+│ Decision: remove
+│ Details: The 'Take off shoes' action should be removed because it is inconsistent with the task of drafting at 
+home and the other movement actions in the sequence. Finding shoes is also redundant and not needed.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 6/10: Walk to desk
+╭──────────── Analysis Window 6/10 ────────────╮
+│ Window Range: 3 to 8
+│ Previous actions: ['Find shoes', 'Take off shoes']
+│ Current action: Walk to desk
+│ Next actions: ['Run to home office', 'Run to shoes']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 6/10 
+──────────────────────────────────────────────╮
+│ Action: Walk to desk
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: augment
+│ Details: The 'Walk to desk' action should be moved after 'Run to home office', and a 'Put on shoes' action should
+be added before running.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 7/10: Run to home office
+╭──────────── Analysis Window 7/10 ────────────╮
+│ Window Range: 4 to 9
+│ Previous actions: ['Take off shoes', 'Walk to desk']
+│ Current action: Run to home office
+│ Next actions: ['Run to shoes', 'Find shoes']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 7/10 
+──────────────────────────────────────────────╮
+│ Action: Run to home office
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: augment
+│ Details: The 'Run to home office' action should be moved after 'Walk to desk' to fix the ordering. The action 
+'Sit down at desk' should also be added after it to complete the sequence of getting situated to draft. The later 
+actions about shoes seem unnecessary and should be removed.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 8/10: Run to shoes
+╭──────────── Analysis Window 8/10 ────────────╮
+│ Window Range: 5 to 10
+│ Previous actions: ['Walk to desk', 'Run to home office']
+│ Current action: Run to shoes
+│ Next actions: ['Find shoes', 'Take off shoes']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 8/10 
+──────────────────────────────────────────────╮
+│ Action: Run to shoes
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: augment
+│ Details: The 'Run to shoes' action should be moved after 'Find shoes' and a new action 'Pick up shoes' should be 
+added in between 'Find shoes' and 'Take off shoes' to make the sequence more logically consistent.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 9/10: Find shoes
+╭──────────── Analysis Window 9/10 ────────────╮
+│ Window Range: 6 to 10
+│ Previous actions: ['Run to home office', 'Run to shoes']
+│ Current action: Find shoes
+│ Next actions: ['Take off shoes']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 9/10 
+──────────────────────────────────────────────╮
+│ Action: Find shoes
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: augment
+│ Details: The action 'Find shoes' should be moved before 'Run to shoes', and the action 'Put on shoes' should be 
+added before 'Take off shoes' for logical consistency.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 10/10: Take off shoes
+╭──────────── Analysis Window 10/10 ────────────╮
+│ Window Range: 7 to 10
+│ Previous actions: ['Run to shoes', 'Find shoes']
+│ Current action: Take off shoes
+│ Next actions: []
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 10/10 
+──────────────────────────────────────────────╮
+│ Action: Take off shoes
+│ Position optimal: False
+│ Action necessary: False
+│ Decision: remove
+│ Details: The action 'Take off shoes' should be removed from the sequence because it is redundant and inconsistent
+with the task of drafting home. The surrounding actions of running to and finding shoes imply putting shoes on, not
+taking them off.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Detailed Analysis for Draft home (look_back=2, look_forward=2):
+Reduction Percentage: -40.00%
+Sequence Similarity: 10.00%
+Sequence Comparison:
+Original:
+1. Run to home office
+2. Run to shoes
+3. Find shoes
+4. Find shoes
+5. Take off shoes
+6. Walk to desk
+7. Run to home office
+8. Run to shoes
+9. Find shoes
+10. Take off shoes
+Optimized:
+1. Run to home office
+2. Put on shoes
+3. Run to shoes
+4. Put on shoes
+5. Find shoes
+6. Put on shoes
+7. Sit down at desk
+8. Pick up shoes
+9. Put on shoes
+10. Find shoes
+11. Walk to desk
+12. Run to home office
+13. Run to shoes
+14. Find shoes
+Testing window configuration: look_back=3, look_forward=3
+Analyzing action 1/10: Run to home office
+╭──────────── Analysis Window 1/10 ────────────╮
+│ Window Range: 0 to 4
+│ Previous actions: []
+│ Current action: Run to home office
+│ Next actions: ['Run to shoes', 'Find shoes', 'Find shoes']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 1/10 
+──────────────────────────────────────────────╮
+│ Action: Run to home office
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: augment
+│ Details: The current action should be moved to the beginning of the sequence, and a new action 'Put on shoes' 
+should be added after 'Find shoes'. This will make the sequence more logical and efficient.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 2/10: Run to shoes
+╭──────────── Analysis Window 2/10 ────────────╮
+│ Window Range: 0 to 5
+│ Previous actions: ['Run to home office']
+│ Current action: Run to shoes
+│ Next actions: ['Find shoes', 'Find shoes', 'Take off shoes']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 2/10 
+──────────────────────────────────────────────╮
+│ Action: Run to shoes
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: augment
+│ Details: The 'Run to shoes' action should be moved after 'Take off shoes'. One of the redundant 'Find shoes' 
+actions should be removed. An action for putting on the shoes needs to be added between finding and running with 
+them.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 3/10: Find shoes
+╭──────────── Analysis Window 3/10 ────────────╮
+│ Window Range: 0 to 6
+│ Previous actions: ['Run to home office', 'Run to shoes']
+│ Current action: Find shoes
+│ Next actions: ['Find shoes', 'Take off shoes', 'Walk to desk']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 3/10 
+──────────────────────────────────────────────╮
+│ Action: Find shoes
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: augment
+│ Details: The 'Find shoes' action should be kept but one instance should be removed as it is redundant. The 
+remaining 'Find shoes' action should be moved to the position immediately after 'Run to shoes' for a more logical 
+sequence.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 4/10: Find shoes
+╭──────────── Analysis Window 4/10 ────────────╮
+│ Window Range: 0 to 7
+│ Previous actions: ['Run to home office', 'Run to shoes', 'Find shoes']
+│ Current action: Find shoes
+│ Next actions: ['Take off shoes', 'Walk to desk', 'Run to home office']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 4/10 
+──────────────────────────────────────────────╮
+│ Action: Find shoes
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: augment
+│ Details: The 'Find shoes' action should be moved to the position immediately after 'Run to shoes'. Additionally, 
+a 'Put on shoes' action should be added between 'Find shoes' and 'Take off shoes' to ensure a logical sequence.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 5/10: Take off shoes
+╭──────────── Analysis Window 5/10 ────────────╮
+│ Window Range: 1 to 8
+│ Previous actions: ['Run to shoes', 'Find shoes', 'Find shoes']
+│ Current action: Take off shoes
+│ Next actions: ['Walk to desk', 'Run to home office', 'Run to shoes']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 5/10 
+──────────────────────────────────────────────╮
+│ Action: Take off shoes
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: augment
+│ Details: The Take off shoes action should be kept but moved after the Find shoes action. The redundant Find shoes
+action should be removed. A Put on shoes action may need to be added earlier in the sequence if it is missing.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 6/10: Walk to desk
+╭──────────── Analysis Window 6/10 ────────────╮
+│ Window Range: 2 to 9
+│ Previous actions: ['Find shoes', 'Find shoes', 'Take off shoes']
+│ Current action: Walk to desk
+│ Next actions: ['Run to home office', 'Run to shoes', 'Find shoes']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 6/10 
+──────────────────────────────────────────────╮
+│ Action: Walk to desk
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: augment
+│ Details: The action 'Walk to desk' should be kept in the sequence but moved to after 'Take off shoes'. The 
+missing action 'Put on shoes' should be added before 'Walk to desk'. The redundant 'Find shoes' actions should be 
+removed.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 7/10: Run to home office
+╭──────────── Analysis Window 7/10 ────────────╮
+│ Window Range: 3 to 10
+│ Previous actions: ['Find shoes', 'Take off shoes', 'Walk to desk']
+│ Current action: Run to home office
+│ Next actions: ['Run to shoes', 'Find shoes', 'Take off shoes']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 7/10 
+──────────────────────────────────────────────╮
+│ Action: Run to home office
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: move
+│ Details: The 'Run to home office' action should be moved after 'Walk to desk' to put the sequence in a more 
+logical order. The other surrounding shoe-related actions should be removed as they are redundant.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 8/10: Run to shoes
+╭──────────── Analysis Window 8/10 ────────────╮
+│ Window Range: 4 to 10
+│ Previous actions: ['Take off shoes', 'Walk to desk', 'Run to home office']
+│ Current action: Run to shoes
+│ Next actions: ['Find shoes', 'Take off shoes']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 8/10 
+──────────────────────────────────────────────╮
+│ Action: Run to shoes
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: move
+│ Details: The 'Run to shoes' action should be moved to the beginning of the sequence, before 'Take off shoes'. An 
+additional action for 'Put on shoes' should also be added at the very beginning.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 9/10: Find shoes
+╭──────────── Analysis Window 9/10 ────────────╮
+│ Window Range: 5 to 10
+│ Previous actions: ['Walk to desk', 'Run to home office', 'Run to shoes']
+│ Current action: Find shoes
+│ Next actions: ['Take off shoes']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 9/10 
+──────────────────────────────────────────────╮
+│ Action: Find shoes
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: augment
+│ Details: The action 'Find shoes' should be moved to an earlier position, before 'Run to shoes'. Additionally, the
+action 'Put on shoes' should be added after 'Find shoes' to ensure a logical sequence of actions.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 10/10: Take off shoes
+╭──────────── Analysis Window 10/10 ────────────╮
+│ Window Range: 6 to 10
+│ Previous actions: ['Run to home office', 'Run to shoes', 'Find shoes']
+│ Current action: Take off shoes
+│ Next actions: []
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 10/10 
+──────────────────────────────────────────────╮
+│ Action: Take off shoes
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: augment
+│ Details: The 'Take off shoes' action should be moved to after 'Run to home office', and a new action 'Put on 
+shoes' should be added before 'Run to shoes' to ensure shoes are worn before running.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Detailed Analysis for Draft home (look_back=3, look_forward=3):
+Reduction Percentage: -70.00%
+Sequence Similarity: 0.00%
+Sequence Comparison:
+Original:
+1. Run to home office
+2. Run to shoes
+3. Find shoes
+4. Find shoes
+5. Take off shoes
+6. Walk to desk
+7. Run to home office
+8. Run to shoes
+9. Find shoes
+10. Take off shoes
+Optimized:
+1. Put on shoes
+2. Put on shoes
+3. Run to home office
+4. {'action': 'Put on shoes', 'position': 4}
+5. Put on shoes
+6. {'action': 'Put on shoes', 'position': 4}
+7. Run to shoes
+8. Find shoes
+9. Put on shoes
+10. {'action': 'Put on shoes', 'position': 1}
+11. Find shoes
+12. Take off shoes
+13. Walk to desk
+14. Run to home office
+15. Run to shoes
+16. Find shoes
+17. Take off shoes
+Testing sequence: Make bed
+==================================================
+Original sequence:
+1. Turn to bed
+2. Turn to bed
+3. Turn to bed
+4. Turn to bed
+5. Turn to bed
+6. Turn to bed
+7. Turn to bed
+8. Turn to bed
+9. Turn to bed
+10. Turn to bed
+Testing window configuration: look_back=1, look_forward=1
+Analyzing action 1/10: Turn to bed
+╭──────────── Analysis Window 1/10 ────────────╮
+│ Window Range: 0 to 2
+│ Previous actions: []
+│ Current action: Turn to bed
+│ Next actions: ['Turn to bed']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 1/10 
+──────────────────────────────────────────────╮
+│ Action: Turn to bed
+│ Position optimal: True
+│ Action necessary: True
+│ Decision: keep
+│ Details: The current action of turning to face the bed is in the optimal position as the first step in making the
+bed. It is a necessary movement action that contributes to the task goal. There are no dependencies, redundancies, 
+or missing actions. The action should be kept as is.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 2/10: Turn to bed
+╭──────────── Analysis Window 2/10 ────────────╮
+│ Window Range: 0 to 3
+│ Previous actions: ['Turn to bed']
+│ Current action: Turn to bed
+│ Next actions: ['Turn to bed']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 2/10 
+──────────────────────────────────────────────╮
+│ Action: Turn to bed
+│ Position optimal: True
+│ Action necessary: True
+│ Decision: remove
+│ Details: The 'Turn to bed' action should only occur once at the beginning of the sequence. The repeated actions 
+can be removed as they are redundant and do not contribute further to the task.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 3/10: Turn to bed
+╭──────────── Analysis Window 3/10 ────────────╮
+│ Window Range: 1 to 4
+│ Previous actions: ['Turn to bed']
+│ Current action: Turn to bed
+│ Next actions: ['Turn to bed']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 3/10 
+──────────────────────────────────────────────╮
+│ Action: Turn to bed
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: augment
+│ Details: Keep only the first instance of 'Turn to bed', remove the redundant ones, and add the missing actions to
+complete the bed-making process.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 4/10: Turn to bed
+╭──────────── Analysis Window 4/10 ────────────╮
+│ Window Range: 2 to 5
+│ Previous actions: ['Turn to bed']
+│ Current action: Turn to bed
+│ Next actions: ['Turn to bed']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 4/10 
+──────────────────────────────────────────────╮
+│ Action: Turn to bed
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: augment
+│ Details: Keep the first 'Turn to bed' action, remove the redundant ones, and add the missing actions for actually
+making the bed.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 5/10: Turn to bed
+╭──────────── Analysis Window 5/10 ────────────╮
+│ Window Range: 3 to 6
+│ Previous actions: ['Turn to bed']
+│ Current action: Turn to bed
+│ Next actions: ['Turn to bed']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 5/10 
+──────────────────────────────────────────────╮
+│ Action: Turn to bed
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: remove
+│ Details: The repeated 'Turn to bed' actions should be removed, leaving only one instance at the start of the 
+sequence.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 6/10: Turn to bed
+╭──────────── Analysis Window 6/10 ────────────╮
+│ Window Range: 4 to 7
+│ Previous actions: ['Turn to bed']
+│ Current action: Turn to bed
+│ Next actions: ['Turn to bed']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 6/10 
+──────────────────────────────────────────────╮
+│ Action: Turn to bed
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: remove
+│ Details: The 'Turn to bed' action should be kept in the sequence since it is necessary, but the duplicate 
+instances should be removed as they are redundant.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 7/10: Turn to bed
+╭──────────── Analysis Window 7/10 ────────────╮
+│ Window Range: 5 to 8
+│ Previous actions: ['Turn to bed']
+│ Current action: Turn to bed
+│ Next actions: ['Turn to bed']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 7/10 
+──────────────────────────────────────────────╮
+│ Action: Turn to bed
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: remove
+│ Details: The 'Turn to bed' action should be kept as the first action, but the duplicate actions immediately after
+it should be removed as they are redundant.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 8/10: Turn to bed
+╭──────────── Analysis Window 8/10 ────────────╮
+│ Window Range: 6 to 9
+│ Previous actions: ['Turn to bed']
+│ Current action: Turn to bed
+│ Next actions: ['Turn to bed']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 8/10 
+──────────────────────────────────────────────╮
+│ Action: Turn to bed
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: remove
+│ Details: The 'Turn to bed' action should be kept, but the duplicate instances should be removed since they are 
+redundant.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 9/10: Turn to bed
+╭──────────── Analysis Window 9/10 ────────────╮
+│ Window Range: 7 to 10
+│ Previous actions: ['Turn to bed']
+│ Current action: Turn to bed
+│ Next actions: ['Turn to bed']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 9/10 
+──────────────────────────────────────────────╮
+│ Action: Turn to bed
+│ Position optimal: False
+│ Action necessary: True
+│ Decision: remove
+│ Details: The 'Turn to bed' action should be kept as the first step, but the 2 redundant repetitions of it should 
+be removed to streamline the action sequence.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 10/10: Turn to bed
+╭──────────── Analysis Window 10/10 ────────────╮
+│ Window Range: 8 to 10
+│ Previous actions: ['Turn to bed']
+│ Current action: Turn to bed
+│ Next actions: []
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 10/10 
+──────────────────────────────────────────────╮
+│ Action: Turn to bed
+│ Position optimal: True
+│ Action necessary: True
+│ Decision: keep
+│ Details: The current action of turning to face the bed is in the optimal position as the first step in the 'make 
+bed' task. It is a necessary action that is not redundant and does not require adding or removing any actions.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Detailed Analysis for Make bed (look_back=1, look_forward=1):
+Reduction Percentage: -40.00%
+Sequence Similarity: 20.00%
+Sequence Comparison:
+Original:
+1. Turn to bed
+2. Turn to bed
+3. Turn to bed
+4. Turn to bed
+5. Turn to bed
+6. Turn to bed
+7. Turn to bed
+8. Turn to bed
+9. Turn to bed
+10. Turn to bed
+Optimized:
+1. Turn to bed
+2. Turn to bed
+3. Smooth out comforter
+4. Adjust bedding
+5. Replace bedding and pillows
+6. Smooth out sheets
+7. Remove bedding
+8. Place pillows
+9. Fluff pillows
+10. Tuck in sheets
+11. Smooth out sheets
+12. Remove bedding
+13. Turn to bed
+14. Turn to bed
+Testing window configuration: look_back=2, look_forward=2
+Analyzing action 1/10: Turn to bed
+╭──────────── Analysis Window 1/10 ────────────╮
+│ Window Range: 0 to 3
+│ Previous actions: []
+│ Current action: Turn to bed
+│ Next actions: ['Turn to bed', 'Turn to bed']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 1/10 
+──────────────────────────────────────────────╮
+│ Action: Turn to bed
+│ Position optimal: True
+│ Action necessary: True
+│ Decision: augment
+│ Details: Keep the first 'Turn to bed' action, remove the redundant ones, and add the missing actions to complete 
+the bed-making task.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 2/10: Turn to bed
+╭──────────── Analysis Window 2/10 ────────────╮
+│ Window Range: 0 to 4
+│ Previous actions: ['Turn to bed']
+│ Current action: Turn to bed
+│ Next actions: ['Turn to bed', 'Turn to bed']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 2/10 
+──────────────────────────────────────────────╮
+│ Action: Turn to bed
+│ Position optimal: True
+│ Action necessary: True
+│ Decision: remove
+│ Details: The 'Turn to bed' action should only be done once at the start of the sequence. The repeated turns are 
+redundant and can be removed to optimize the sequence.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 3/10: Turn to bed
+╭──────────── Analysis Window 3/10 ────────────╮
+│ Window Range: 0 to 5
+│ Previous actions: ['Turn to bed', 'Turn to bed']
+│ Current action: Turn to bed
+│ Next actions: ['Turn to bed', 'Turn to bed']
+╰──────────────────────────────────────────────╯
+╭─────────────────────────────────────────────── Analysis Result 3/10 
+──────────────────────────────────────────────╮
+│ Action: Turn to bed
+│ Position optimal: False
+│ Action necessary: False
+│ Decision: augment
+│ Details: The 'Turn to bed' action should be kept once at the beginning of the sequence. The redundant instances 
+should be removed and replaced with actions that contribute to making the bed, such as straightening sheets, 
+fluffing pillows, and smoothing out the comforter.
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Analyzing action 4/10: Turn to bed
+╭──────────── Analysis Window 4/10 ────────────╮
+│ Window Range: 1 to 6
+│ Previous actions: ['Turn to bed', 'Turn to bed']
+│ Current action: Turn to bed
+│ Next actions: ['Turn to bed', 'Turn to bed']
+╰──────────────────────────────────────────────╯
