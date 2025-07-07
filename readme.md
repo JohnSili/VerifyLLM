@@ -9,7 +9,7 @@ A novel framework that combines Large Language Models with Linear Temporal Logic
 
 [\[📄Paper\]](https://arxiv.org/)  [\[🔥Project Page\]](https://verifyllm.github.io/) [\[🚀 Quick Start\]](#-quick-start) [\[✅ Performance\]](#-performance)
 
-[\[🔧Installation\]](#-installation) [\[🧪 Experiments\]](#-experiments) [\[📊 Datasets\]](#-datasets-coming-soon)
+[\[🔧Installation\]](#-installation) [\[📊 Datasets\]](#-datasets-coming-soon)
 
 </div>
 
@@ -27,7 +27,7 @@ We evaluate VerifyLLM on specialized datasets with LTL annotations, achieving **
 - **🎯 Three Error Types**: Identifies position errors, missing prerequisites, and redundant actions
 - **📝 Formal Constraints**: Uses Linear Temporal Logic for temporal dependency modeling
 - **🔍 Sliding Window Analysis**: Optimal context window of 5 actions for efficient processing
-- **🏠 Household Domain**: Specialized datasets for everyday robotic tasks
+- **🏠 Household Domain**: Tested on household robotic tasks
 - **📈 Significant Improvements**: 40% reduction in ordering errors over baselines
 
 ## 🏆 Performance
@@ -48,7 +48,7 @@ We evaluate VerifyLLM on specialized datasets with LTL annotations, achieving **
 
 ### Prerequisites
 - Python 3.8+
-- OpenAI API key or Anthropic API key
+- Anthropic API key (for Claude) or OpenAI API key
 - PyTorch 1.7.1+
 
 ### Installation
@@ -74,8 +74,6 @@ pip install -r requirements.txt
 ```bash
 # Create .env file
 ANTHROPIC_API_KEY=your-api-key
-# OR
-OPENAI_API_KEY=your-api-key
 ```
 
 ### Basic Usage
@@ -104,8 +102,6 @@ if result.success:
     print(f"Original: {len(original_plan)} actions")
     print(f"Optimized: {len(result.optimized_plan)} actions")
     print_sequence_comparison(original_plan, result.optimized_plan)
-else:
-    print("❌ Verification failed:", result.error)
 ```
 
 ## 📁 Project Structure
@@ -130,75 +126,28 @@ verifyllm/
 │   ├── alfred_ltl/              # ALFRED-LTL dataset
 │   └── virtualhome_ltl/         # VirtualHome-LTL dataset
 ├── experiments/                  # Experimental scripts
-├── tests/                       # Unit tests
 ├── requirements.txt             # Dependencies
 └── README.md                    # This file
 ```
 
 ## 🔧 Installation
 
-### Option 1: pip install (Recommended)
-```bash
-pip install verifyllm
-```
-
-### Option 2: From source
-```bash
-git clone https://github.com/your-username/verifyllm.git
-cd verifyllm
-pip install -e .
-```
-
 ### Dependencies
-- `anthropic>=0.18.0` or `openai>=1.0.0`
+- `anthropic>=0.18.0` (for Claude)
 - `torch>=1.7.1`
 - `spot>=3.2.0` (for LTL validation)
 - `rich>=13.0.0` (for console output)
-
-## 🧪 Experiments
-
-### Running Evaluations
-
-**Basic evaluation on VirtualHome dataset**:
-```bash
-python experiments/evaluate_virtualhome.py \
-    --model claude-3-sonnet \
-    --dataset datasets/virtualhome_ltl \
-    --output results/virtualhome_claude.json
-```
-
-**Ablation studies**:
-```bash
-# Without LTL translation
-python experiments/ablation.py --no-ltl
-
-# Without LLM verification  
-python experiments/ablation.py --no-llm
-
-# Different window sizes
-python experiments/window_size.py --sizes 3,5,7,9
-```
-
-**Custom dataset evaluation**:
-```bash
-python experiments/evaluate_custom.py \
-    --input your_dataset.json \
-    --task_field "instruction" \
-    --plan_field "actions"
-```
 
 ## 📊 Datasets (Coming Soon)
 
 ### ALFRED-LTL
 - **Source**: Derived from ALFRED dataset
 - **Tasks**: Household instruction following
-- **Size**: 200 annotated task plans
 - **LTL Annotations**: Temporal constraints and dependencies
 
 ### VirtualHome-LTL  
 - **Source**: Adapted from VirtualHome dataset
 - **Tasks**: Human-like daily activities
-- **Size**: 200 action sequences
 - **LTL Annotations**: Common-sense temporal relationships
 
 ### Dataset Format
@@ -213,30 +162,6 @@ python experiments/evaluate_custom.py \
 }
 ```
 
-## ⚙️ Configuration
-
-### Window Size Optimization
-```python
-# Optimal window size (empirically determined)
-WINDOW_SIZE = 5  # actions
-
-# For different complexity levels:
-# Simple tasks: 3
-# Medium tasks: 5 (recommended)
-# Complex tasks: 7
-```
-
-### Model Selection
-```python
-# Supported models
-MODELS = {
-    "claude-3-sonnet": "anthropic",
-    "claude-3-opus": "anthropic", 
-    "gpt-4": "openai",
-    "gpt-4-turbo": "openai"
-}
-```
-
 ## 🔍 Algorithm Details
 
 ### Translation Module
@@ -247,80 +172,9 @@ MODELS = {
 
 ### Verification Module
 1. **Input**: Action sequence + LTL formula
-2. **Process**: Sliding window analysis with LLM reasoning
+2. **Process**: Sliding window analysis (window size: 5) with LLM reasoning
 3. **Detection**: Three error types identification
 4. **Correction**: Reordering, insertion, removal operations
-
-## 📈 Results Analysis
-
-### Error Type Distribution
-```
-Position Errors:    45% of total issues
-Missing Prerequisites: 35% of total issues  
-Redundant Actions:   20% of total issues
-```
-
-### Performance by Task Complexity
-- **Simple (≤5 actions)**: 85% accuracy
-- **Medium (6-10 actions)**: 72% accuracy  
-- **Complex (>10 actions)**: 61% accuracy
-
-## 🛠️ Advanced Usage
-
-### Custom LTL Templates
-```python
-# Define custom LTL patterns
-custom_templates = {
-    "sequential": "F({action1}) ∧ F({action2}) ∧ ({action1} U {action2})",
-    "conditional": "G({condition} → F({action}))",
-    "eventually": "F({action})"
-}
-
-processor = ActionProcessor(ltl_templates=custom_templates)
-```
-
-### Batch Processing
-```python
-# Process multiple plans
-plans = [plan1, plan2, plan3]
-results = processor.verify_batch(plans, task_descriptions)
-
-# Generate report
-processor.generate_report(results, output_file="batch_results.html")
-```
-
-## 🧪 Testing
-
-Run the test suite:
-```bash
-# All tests
-python -m pytest tests/
-
-# Specific components
-python -m pytest tests/test_ltl_translation.py
-python -m pytest tests/test_verification.py
-python -m pytest tests/test_integration.py
-
-# With coverage
-python -m pytest tests/ --cov=src/
-```
-
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
-
-### Development Setup
-```bash
-# Install development dependencies
-pip install -e ".[dev]"
-
-# Install pre-commit hooks
-pre-commit install
-
-# Run linting
-flake8 src/ tests/
-black src/ tests/
-```
 
 ## 📄 Citation
 
@@ -333,14 +187,9 @@ black src/ tests/
 }
 ```
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 🙏 Acknowledgments
 
 - Built upon the foundations of classical planning and modern LLM research
-- Inspired by the need for reliable robotic task execution
 - Special thanks to the ALFRED and VirtualHome dataset creators
 
 ---
@@ -348,7 +197,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 <div align="center">
 
 **[🔝 Back to Top](#verifyllm-llm-based-pre-execution-task-plan-verification-for-robots)**
-
-Made with ❤️ by the VerifyLLM team
 
 </div>
