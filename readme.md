@@ -192,13 +192,13 @@ python experiments/evaluate_custom.py \
 ### ALFRED-LTL
 - **Source**: Derived from ALFRED dataset
 - **Tasks**: Household instruction following
-- **Size**: 25,000+ annotated task plans
+- **Size**: 200 annotated task plans
 - **LTL Annotations**: Temporal constraints and dependencies
 
 ### VirtualHome-LTL  
 - **Source**: Adapted from VirtualHome dataset
 - **Tasks**: Human-like daily activities
-- **Size**: 15,000+ action sequences
+- **Size**: 200 action sequences
 - **LTL Annotations**: Common-sense temporal relationships
 
 ### Dataset Format
