@@ -55,8 +55,8 @@ We evaluate VerifyLLM on specialized datasets with LTL annotations, achieving **
 
 1. **Clone the repository**:
 ```bash
-git clone https://github.com/your-username/verifyllm
-cd verifyllm
+git clone https://github.com/JohnSili/VerifyLLM.git
+cd VerifyLLM
 ```
 
 2. **Create virtual environment**:
