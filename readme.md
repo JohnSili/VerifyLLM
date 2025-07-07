@@ -143,24 +143,36 @@ verifyllm/
 ### ALFRED-LTL
 - **Source**: Derived from ALFRED dataset
 - **Tasks**: Household instruction following
-- **LTL Annotations**: Temporal constraints and dependencies
+- **LTL Annotations**: Multiple temporal logic representations
 
 ### VirtualHome-LTL  
 - **Source**: Adapted from VirtualHome dataset
 - **Tasks**: Human-like daily activities
-- **LTL Annotations**: Common-sense temporal relationships
+- **LTL Annotations**: Structured temporal constraints
 
 ### Dataset Format
 ```json
 {
-  "task_id": "make_tea_001",
-  "instruction": "Make a cup of tea",
-  "original_plan": ["heat water", "prepare cup", "pour tea", "add sugar"],
-  "ltl_formula": "F(heat_water) ∧ F(prepare_cup) ∧ F(pour_tea)",
-  "issues": ["missing_prerequisite", "position_error"],
-  "corrected_plan": ["heat water", "prepare cup", "add tea bag", "pour hot water", "add sugar"]
+  "task_id": 111,
+  "split": "train",
+  "goal": "Cool a slice of bread and place it in the trash can.",
+  "atomic_predicates": {
+    "locations": ["at_table", "at_fridge", "at_trash_can"],
+    "holding": ["have_knife", "have_bread_slice"],
+    "object_states": ["bread_sliced", "knife_in_trash", "bread_cooled", "slice_in_trash"],
+    "actions": ["turn_left", "step_forward", "pick_up_knife", "walk_around", "cut_bread", "place_knife", "pick_up_slice", "turn_around", "cool_bread", "remove", "walk_across", "place_slice"]
+  },
+  "sequential_ltl": "F(turn_left) ∧ F(step_forward) ∧ F(at_table) ∧ F(pick_up_knife) ∧ F(have_knife) ∧ F(walk_around) ∧ F(cut_bread) ∧ F(bread_sliced)...",
+  "sequential_with_conditions": "F(turn_left ∧ X(step_forward)) ∧ F(step_forward ∧ X(at_table)) ∧ F(at_table ∧ X(pick_up_knife ∧ have_knife))...",
+  "structured_ltl": "(¬slice_in_trash U (at_table ∧ have_knife ∧ F(bread_sliced ∧ knife_in_trash ∧ F(bread_cooled ∧ at_trash_can)))) ∧ F(slice_in_trash)"
 }
 ```
+
+### LTL Representations
+- **Sequential LTL**: Basic temporal ordering with eventually operators
+- **Sequential with Conditions**: Conditional sequencing with next operators  
+- **Structured LTL**: High-level temporal constraints with until operators
+- **Atomic Predicates**: Categorized state variables for locations, objects, and actions
 
 ## 🔍 Algorithm Details
 
@@ -183,19 +195,15 @@ verifyllm/
   title={VerifyLLM: LLM-Based Pre-Execution Task Plan Verification for Robots},
   author={Grigorev, Danil S. and Kovalev, Alexey K. and Panov, Aleksandr I.},
   journal={arXiv preprint arXiv:XXXX.XXXXX},
-  year={2024}
+  year={2025}
 }
 ```
-
-## 🙏 Acknowledgments
-
-- Built upon the foundations of classical planning and modern LLM research
-- Special thanks to the ALFRED and VirtualHome dataset creators
 
 ---
 
 <div align="center">
 
 **[🔝 Back to Top](#verifyllm-llm-based-pre-execution-task-plan-verification-for-robots)**
+
 
 </div>
